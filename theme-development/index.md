@@ -1,0 +1,28 @@
+<a href="/docs" class="text-sm text-grey-dark no-underline border rounded py-1 px-4 w-full block text-center hover:bg-grey-lightest font-semibold">Back to Docs</a>
+
+- Prologue
+  - [Introduction](/docs/theme-development/introduction)
+  - [Directory Structure](/docs/theme-development/directory-structure)
+  - [Screenshot](/docs/theme-development/screenshot)
+  - [Manifest](/docs/theme-development/manifest)
+  - [Blueprints](/docs/theme-development/blueprints)
+  - [View Composers](/docs/theme-development/view-composers)
+- Blade
+  - [Introduction](/docs/theme-development/blade)
+  - [Defining A Layout](/docs/theme-development/defining-a-layout)
+  - [Extending A Layout](/docs/theme-development/extending-a-layout)
+  - [Components & Slots](/docs/theme-development/components-and-slots)
+  - [Including Sub-Views](/docs/theme-development/including-views)
+  - [Stacks](/docs/theme-development/stacks)
+  - [Overloading Modules](/docs/theme-development/overloading-modules)
+- Displaying Data
+  - [Introduction](/docs/theme-development/displaying-data)
+  - [If It Exists](/docs/theme-development/if-it-exists)
+  - [Unescaped](/docs/theme-development/unescaped)
+  - [JavaScript Frameworks](/docs/theme-development/javascript-frameworks)
+- Control Structures
+  - [If Statements](/docs/theme-development/if-statements)
+  - [Loops](/docs/theme-development/loops)
+  - [The Loop Variable](/docs/theme-development/loop-variable)
+  - [Comments](/docs/theme-development/comments)
+  - [PHP](/docs/theme-development/php)

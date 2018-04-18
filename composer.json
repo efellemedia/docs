@@ -1,0 +1,7 @@
+{
+    "name": "efelle/docs",
+    "description": "Efelle documentation",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {}
+}
