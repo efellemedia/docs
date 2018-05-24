@@ -4,7 +4,6 @@
 
 **Estimated Update Time: 2 Hours**
 
-> #### Note
 > We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
 
 ### Categories Module

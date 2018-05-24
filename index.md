@@ -6,6 +6,7 @@
 - The Basics
     - [Assets](/docs/assets)
     - [Categories](/docs/categories)
+    - [Fieldtypes...](/docs/fieldtypes)
     - [Forms](/docs/forms)
     - [Mail](/docs/mail)
     - [Navigation](/docs/navigation)
