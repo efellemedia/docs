@@ -63,18 +63,16 @@ $fileSize = friendly_byte('5242880');
 
 The `glide` method will pass the given asset through Glide for on-the-fly image manipulation. This method will simply return any cached instance of the resource saving on precious server resources.
 
+The path to your image is relative to the `storage/uploads` directory. This directory is managed by the Assets module.
+
 ```php
-<img src="{{ glide('assets/example.png') }}"></img>
+<img src="{{ glide($asset->location) }}"></img>
 ```
 
 Glide manipulation options may be passed through as a second parameter as an array.
 
 ```php
-<img src="{{ glide('assets/example.png', [
-    'w' => 200,
-    'h' => 200,
-    'fit' => 'crop',
-]) }}"></img>
+<img src="{{ glide($asset->location, ['w' => 200, 'h' => 200, 'fit' => 'crop']) }}"></img>
 ```
 
 #### Glide Manipulation Options
@@ -88,7 +86,7 @@ Glide manipulation options may be passed through as a second parameter as an arr
 | Fit | `fit` | Sets how the image is fitted to its target dimensions. |
 | Device Pixel Ratio | `dpr` | Multiplies the overall image size. |
 | Brightness | `bri` | Adjusts the image brightness. |
-| Contrast | `con` | Adjusts the image constrast. |
+| Contrast | `con` | Adjusts the image contrast. |
 | Gamma | `gam` | Adjusts the image gamma. |
 | Sharpen | `sharp` | Sharpen the image. |
 | Blur | `blur` | Adds a blur effect to the image. |
