@@ -8,6 +8,7 @@
 [`byte_converter`](#method-byte-converter)
 [`convert_to_bytes`](#method-convert-to-bytes)
 [`friendly_byte`](#method-friendly-byte)
+[`glide`](#method-glide)
 
 </div>
 
@@ -53,4 +54,25 @@ The `friendly_byte` method convert bytes to a human readable format.
 $fileSize = friendly_byte('5242880');
 
 // 5MB
+```
+
+---
+
+<a name="method-glide"></a>
+### `glide()`
+
+The `glide` method will pass the given asset through Glide for on-the-fly image manipulation. This method will simply return any cached instance of the resource saving on precious server resources.
+
+```php
+<img src="{{ glide('assets/example.png') }}"></img>
+```
+
+Glide manipulation options may be passed through as a second parameter as an array.
+
+```php
+<img src="{{ glide('assets/example.png', [
+    'w' => 200,
+    'h' => 200,
+    'fit' => 'crop',
+]) }}"></img>
 ```
