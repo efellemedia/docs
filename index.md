@@ -10,6 +10,7 @@
     - [Code Conventions](/docs/code-conventions)
     - [Documentation](/docs/documentation)
 - Development
+    - [Module Development...](/docs/module-development)
     - [Theme Development...](/docs/theme-development)
     - [Reference...](/docs/reference)
     - [API...](/docs/api)

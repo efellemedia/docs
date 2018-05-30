@@ -2,4 +2,4 @@
 
 - Prologue
     - [Introduction](/docs/module-development/introduction)
-    
+    - [Getting Started](/docs/module-development/getting-started)
