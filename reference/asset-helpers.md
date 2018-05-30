@@ -76,3 +76,32 @@ Glide manipulation options may be passed through as a second parameter as an arr
     'fit' => 'crop',
 ]) }}"></img>
 ```
+
+#### Glide Manipulation Options
+| Name | Function | Description |
+|------|----------|-------------|
+| Orientation | `or` | Rotates the image. |
+| Flip | `flip` | Flip the image. |
+| Crop | `crop` | Crops the image to specific dimensions. |
+| Width | `w` | Sets the width of the image, in pixels. |
+| Height | `h` | Sets the height of the image, in pixels. |
+| Fit | `fit` | Sets how the image is fitted to its target dimensions. |
+| Device pixel ratio | `dpr` | Multiplies the overall image size. |
+| Brightness | `bri` | Adjusts the image brightness. |
+| Contrast | `con` | Adjusts the image constrast. |
+| Gamma | `gam` | Adjusts the image gamma. |
+| Sharpen | `sharp` | Sharpen the image. |
+| Blur | `blur` | Adds a blur effect to the image. |
+| Pixelate | `pixel` | Applies a pixelation effect to the image. |
+| Filter | `filt` | Applies a filter effect to the image. |
+| Watermark Path | `mark` | Adds a watermark to the image. |
+| Watermark Width | `markw` | Sets the width of the watermark. |
+| Watermark Height | `markh` | Sets the height of the watermark. |
+| Watermark X-offset | `markx` | Sets the watermark distance from left/right edges. |
+| Watermark Y-offset | `marky` | Sets the watermark distance from top/bottom edges. |
+| Watermark Padding | `markpad` | Sets the watermark distance from the edges. |
+| Watermark Position | `markpos` | Sets where the watermark is positioned. |
+| Background | `bg` | Sets the background color of the image. |
+| Border | `border` | Add a border to the image. |
+| Quality | `q` | Defines the quality of the image. |
+| Format | `fm` | Encodes the image to a specific format. |
