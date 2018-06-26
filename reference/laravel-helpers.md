@@ -916,7 +916,7 @@ $title = title_case('a nice title uses the correct case');
 <a name="method-trans"></a>
 ### `trans()`
 
-The `trans` function translates the given language line using Laravel's [localization files](//laravel.com/docs/5.4/localization):
+The `trans` function translates the given language line using Laravel's [localization files](//laravel.com/5.4/localization):
 
 ```php
 echo trans('validation.required'):
@@ -1204,7 +1204,7 @@ dump($value);
 <a name="method-dispatch"></a>
 ### `dispatch()`
 
-The `dispatch` function pushes a new job onto the Laravel [job queue](/docs/{{version}}/queues):
+The `dispatch` function pushes a new job onto the Laravel [job queue](/{{version}}/queues):
 
 ```php
 dispatch(new App\Jobs\SendEmails);
@@ -1229,7 +1229,7 @@ $env = env('APP_ENV', 'production');
 <a name="method-event"></a>
 ### `event()`
 
-The `event` function dispatches the given [event](/docs/{{version}}/events) to its listeners:
+The `event` function dispatches the given [event](/{{version}}/events) to its listeners:
 
 ```php
 event(new UserRegistered($user));
@@ -1240,7 +1240,7 @@ event(new UserRegistered($user));
 <a name="method-factory"></a>
 ### `factory()`
 
-The `factory` function creates a model factory builder for a given class, name, and amount. It can be used while [testing](//laravel.com/docs/5.4/database-testing#writing-factories) or [seeding](//laravel.com/docs/5.4/seeding#using-model-factories):
+The `factory` function creates a model factory builder for a given class, name, and amount. It can be used while [testing](//laravel.com/5.4/database-testing#writing-factories) or [seeding](//laravel.com/5.4/seeding#using-model-factories):
 
 ```php
 $user = factory(App\User::class)->make();
@@ -1280,7 +1280,7 @@ An array of contextual data may also be passed to the function:
 logger('User has logged in.', ['id' => $user->id]);
 ```
 
-A [logger](//laravel.com/docs/5.4/errors#logging) instance will be returned if no value is passed to the function:
+A [logger](//laravel.com/5.4/errors#logging) instance will be returned if no value is passed to the function:
 
 ```php
 logger()->error('You are not allowed here.');
@@ -1315,7 +1315,7 @@ return now();
 <a name="method-old"></a>
 ### `old()`
 
-The `old` function [retrieves](/docs/{{version}}/requests#retrieving-input) an old input value flashed into the session:
+The `old` function [retrieves](/{{version}}/requests#retrieving-input) an old input value flashed into the session:
 
 ```php
 $value = old('value');
@@ -1365,7 +1365,7 @@ report($e);
 <a name="method-request"></a>
 ### `request()`
 
-The `request` function returns the current [request](/docs/{{version}}/requests) instance or obtains an input item:
+The `request` function returns the current [request](/{{version}}/requests) instance or obtains an input item:
 
 ```php
 $request = request();
@@ -1378,7 +1378,7 @@ $value = request('key', $default = null)
 <a name="method-response"></a>
 ### `response()`
 
-The `response` function creates a [response](/docs/{{version}}/responses) instance or obtains an instance of the response factory:
+The `response` function creates a [response](/{{version}}/responses) instance or obtains an instance of the response factory:
 
 ```php
 return response('Hello World', 200, $headers);
@@ -1477,7 +1477,7 @@ $value = value(function () {
 <a name="method-view"></a>
 ### `view()`
 
-The `view` function retrieves a [view](//laravel.com/docs/5.4/views) instance:
+The `view` function retrieves a [view](//laravel.com/5.4/views) instance:
 
 ```php
 return view('auth.login');

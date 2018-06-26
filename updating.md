@@ -56,7 +56,7 @@ Furthermore, if you are still using the `Theme::getLayout()` method or `$theme_l
 Please ensure that you are not referencing any of the repository-specific methods and properties when using the matrix helpers.
 
 ## Deprecated Repository Methods
-For further documentation on the methods available to you with this update, please refer to the Laravel documentation here: https://laravel.com/docs/5.4/eloquent
+For further documentation on the methods available to you with this update, please refer to the Laravel documentation here: https://laravel.com/5.4/eloquent
 
 | From | To |
 |------|----|

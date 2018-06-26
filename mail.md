@@ -39,8 +39,8 @@ To use the [SparkPost](https://www.sparkpost.com/) provider, simply grab the **A
 > #### Note
 > SparkPost is an API based provider. There is additional setup required from the SparkPost side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
 >
-> - [Preparing Your From Address](https://www.sparkpost.com/docs/getting-started/getting-started-sparkpost/#preparing-your-from-address)
-> - [Create API Keys](https://www.sparkpost.com/docs/getting-started/create-api-keys/)
+> - [Preparing Your From Address](https://www.sparkpost.com/getting-started/getting-started-sparkpost/#preparing-your-from-address)
+> - [Create API Keys](https://www.sparkpost.com/getting-started/create-api-keys/)
 
 ---
 

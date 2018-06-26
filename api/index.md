@@ -1,17 +1,17 @@
 <a href="/docs" class="text-sm text-grey-dark no-underline border rounded py-1 px-4 w-full block text-center hover:bg-grey-lightest font-semibold">Back to Index</a>
 
 - Prologue
-  - [Introduction](/docs/api/introduction)
+  - [Introduction](/api/introduction)
 - Getting Started
-  - [Authentication](/docs/api/authentication)
-  - [Errors](/docs/api/errors)
-  - [HTTP Verbs](/docs/api/http-verbs)
-  - [Parameters](/docs/api/parameters)
+  - [Authentication](/api/authentication)
+  - [Errors](/api/errors)
+  - [HTTP Verbs](/api/http-verbs)
+  - [Parameters](/api/parameters)
 - The Basics
-  - [Pagination](/docs/api/pagination)
-  - [Sorting and Filtering](/docs/api/sorting-and-filtering)
+  - [Pagination](/api/pagination)
+  - [Sorting and Filtering](/api/sorting-and-filtering)
 - Endpoints
-  - [Categories](/docs/api/categories)
-  - [Matrix](/docs/api/matrix)
+  - [Categories](/api/categories)
+  - [Matrix](/api/matrix)
 - Guides
-  - [Using Postman](/docs/api/using-postman)
+  - [Using Postman](/api/using-postman)

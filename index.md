@@ -1,16 +1,16 @@
 - Prologue
-    - [Introduction](/docs/introduction)
-    - [Server Requirements](/docs/server-requirements)
-    - [Installing](/docs/installing)
-    - [Updating](/docs/updating)
+    - [Introduction](/introduction)
+    - [Server Requirements](/server-requirements)
+    - [Installing](/installing)
+    - [Updating](/updating)
 - The Basics
-    - [Fieldtypes...](/docs/fieldtypes)
+    - [Fieldtypes...](/fieldtypes)
 - Contributing
-    - [Coding Standards](/docs/coding-standards)
-    - [Code Conventions](/docs/code-conventions)
-    - [Documentation](/docs/documentation)
+    - [Coding Standards](/coding-standards)
+    - [Code Conventions](/code-conventions)
+    - [Documentation](/documentation)
 - Development
-    - [Module Development...](/docs/module-development)
-    - [Theme Development...](/docs/theme-development)
-    - [Reference...](/docs/reference)
-    - [API...](/docs/api)
+    - [Module Development...](/module-development)
+    - [Theme Development...](/theme-development)
+    - [Reference...](/reference)
+    - [API...](/api)
