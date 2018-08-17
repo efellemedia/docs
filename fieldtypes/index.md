@@ -1,4 +1,4 @@
-<a href="/" class="text-sm text-grey-dark no-underline border rounded py-1 px-4 w-full block text-center hover:bg-grey-lightest font-semibold">Back to Index</a>
+<a href="/" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
 
 - Prologue
     - [Introduction](/fieldtypes/introduction)
