@@ -3,3 +3,5 @@
 - Prologue
     - [Introduction](/module-development/introduction)
     - [Getting Started](/module-development/getting-started)
+- Components
+    - [Fieldtypes](/module-development/fieldtypes)
