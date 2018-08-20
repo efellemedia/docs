@@ -13,7 +13,7 @@
   - [Laravel](/reference/laravel-helpers)
   - [Matrix](/reference/matrix-helpers)
 - Models
-  - [`Asset`](/reference/asset-model)
-  - [`Category`](/reference/category-model)
+  - [Asset](/reference/asset-model)
+  - [Category](/reference/category-model)
 - Support
   - [Collections](/reference/collections)
