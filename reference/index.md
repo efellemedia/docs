@@ -21,3 +21,4 @@
   - [Category](/reference/category-model)
 - Support
   - [Collections](/reference/collections)
+  - [Glide](/reference/glide)
