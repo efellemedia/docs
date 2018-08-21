@@ -1,5 +1,7 @@
 # Collections
 
+> The following documentation was taken straight from the [source](https://laravel.com/docs/5.4/collections) with minor modifications. It has been copied here for your convenience.
+
 The `Illuminate\Support\Collection` class provides a fluent, convenient wrapper for working with arrays of data. For example, check out the following code. We'll use the `collect` helper to create a new collection instance from the array, run the `strtoupper` function on each element, and then remove all empty elements:
 
 ```php

@@ -1,4 +1,7 @@
 # Glide
+
+> The following documentation was taken straight from the [source](http://glide.thephpleague.com/) with minor modifications. It has been copied here for your convenience.
+
 Glide is a wonderfully easy on-demand image manipulation library written in PHP. Its straightforward API is exposed via HTTP, similar to cloud image processing services like [Imgix](http://www.imgix.com/) and [Cloudinary](http://cloudinary.com/). Glide leverages powerful libraries like [Intervention Image](http://image.intervention.io/) (for image handling and manipulation) and [Flysystem](http://flysystem.thephpleague.com/) (for file system abstraction).
 
 ## Quick Reference
