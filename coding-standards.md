@@ -144,10 +144,20 @@ class FooBar
  * @param \Closure|string|null $concrete
  * @param bool                 $shared
  *
- * @return void
+ * @throws \Exception
+ *
+ * @return string|array
  */
 public function bind($abstract, $concrete = null, $shared = false)
 {
-    //
+    if (is_null($abstract)) {
+        throw new \Exception('Abstract parameter must not be null.');
+    }
+
+    if ($shared) {
+        return $abstract;
+    }
+
+    return [$abstract => $concrete];
 }
 ```

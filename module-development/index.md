@@ -3,5 +3,17 @@
 - Prologue
     - [Introduction](/module-development/introduction)
     - [Getting Started](/module-development/getting-started)
-- Components
+    - [Artisan Commands](/module-development/artisan-commands)
+- Structure
+    - [API](/module-development/api)
+    - [Commands](/module-development/commands)
+    - [Controllers](/module-development/controllers)
+    - [Event Listeners](/module-development/event-listeners)
     - [Fieldtypes](/module-development/fieldtypes)
+    - [Helpers](/module-development/helpers)
+    - [Menus](/module-development/menus)
+    - [Migrations](/module-development/migrations)
+    - [Models](/module-development/models)
+    - [Notifications](/module-development/notifications)
+    - [Service Providers](/module-development/service-providers)
+    - [Settings](/module-development/settings)

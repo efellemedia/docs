@@ -7,11 +7,15 @@
 - Helpers
   - [API](/reference/api-helpers)
   - [Application](/reference/application-helpers)
+  - [Arrays](/reference/array-helpers)
   - [Assets](/reference/asset-helpers)
   - [Category](/reference/category-helpers)
   - [Form](/reference/form-helpers)
-  - [Laravel](/reference/laravel-helpers)
   - [Matrix](/reference/matrix-helpers)
+  - [Miscellaneous](/reference/miscellaneous-helpers)
+  - [Paths](/reference/path-helpers)
+  - [Strings](/reference/string-helpers)
+  - [URLs](/reference/url-helpers)
 - Models
   - [Asset](/reference/asset-model)
   - [Category](/reference/category-model)

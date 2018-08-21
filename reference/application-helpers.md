@@ -9,8 +9,6 @@
 [`app_codename`](#method-app-codename)
 [`app_memory_usage`](#method-app-memory-usage)
 [`app_loading_time`](#method-app-loading-time)
-[`human_filesize`](#method-human-filesize)
-[`render_markdown`](#method-render-markdown)
 
 </div>
 
@@ -65,30 +63,4 @@ The `app_loading_time` method returns the total loading time of the page request
 $time = app_loading_time()
 
 // 0.08s
-```
-
----
-
-<a name="method-human-filesize"></a>
-### `human_filesize()`
-
-The `human_filesize` method returns the passed bytes in a human readable format.
-
-```php
-$filesize = human_filesize(1030000);
-
-// 1.03 MB
-```
-
----
-
-<a name="method-render-markdown"></a>
-### `render_markdown()`
-
-The `render_markdown` method compiles the given markdown string into HTML.
-
-```php
-$html = render_markdown('# Hello World!');
-
-// <h1>Hello World!</h1>
 ```
