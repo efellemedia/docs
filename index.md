@@ -3,6 +3,7 @@
     - [Server Requirements](/server-requirements)
     - [Installing](/installing)
     - [Updating](/updating)
+    - [Configuration](/configuration)
 - The Basics
     - [Fieldtypes...](/fieldtypes)
 - Contributing
