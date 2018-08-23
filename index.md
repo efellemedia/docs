@@ -1,9 +1,9 @@
-- Prologue
+- Getting Started
     - [Introduction](/introduction)
     - [Server Requirements](/server-requirements)
     - [Installing](/installing)
     - [Updating](/updating)
-    - [Configuration](/configuration)
+    - [Licensing](/licensing)
 - The Basics
     - [Fieldtypes...](/fieldtypes)
 - Contributing
@@ -15,3 +15,4 @@
     - [Theme Development...](/theme-development)
     - [Reference...](/reference)
     - [API...](/api)
+    - [Modes](/modes)

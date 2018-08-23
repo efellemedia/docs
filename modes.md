@@ -1,4 +1,5 @@
-# Configuration
+# Modes
+FusionCMS has a couple of modes it can be placed in for various needs. **Maintenance** mode and **suspended** mode.
 
 ## Maintenance Mode
 When FusionCMS is in maintenance mode, a custom view will be displayed for all requests of your website. This makes it easy to "disable" your website while performing large maintenance tasks.
