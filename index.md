@@ -15,4 +15,5 @@
     - [Theme Development...](/theme-development)
     - [Reference...](/reference)
     - [API...](/api)
+    - [Environments](/environments)
     - [Modes](/modes)
