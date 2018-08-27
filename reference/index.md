@@ -4,6 +4,8 @@
   - [Introduction](/reference/introduction)
 - The Basics
   - [SEO](/reference/seo)
+- Frontend
+  - [Font Awesome](/reference/fontawesome)
 - Helpers
   - [API](/reference/api-helpers)
   - [Application](/reference/application-helpers)
