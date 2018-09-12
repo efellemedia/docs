@@ -56,7 +56,7 @@ The following will demonstrate a simple Blog matrix with a Post type that contai
 #### /matrix/blog/post/show.blade.php
 ```php
 @foreach ($entry->content as $item)
-    @include('modern::matrix.blog.post.replicator.'.$item['set'], ['data' => $item['data']])
+    @include('modern::matrix.blog.post.content.'.$item['set'], ['data' => $item['data']])
 @endforeach
 ```
 
