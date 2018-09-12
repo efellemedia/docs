@@ -5,6 +5,9 @@ The input fieldtype is the most basic fieldtype available. The default type allo
 ## Casts
 Input fieldtypes return their values as a `string`.
 
+## Default
+The default value returned by an input fieldtype is an empty `string`.
+
 ## Settings
 Input fieldtypes have the following settings:
 
