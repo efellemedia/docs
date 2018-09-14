@@ -1,6 +1,7 @@
 - Getting Started
     - [Introduction](/introduction)
     - [Server Requirements](/server-requirements)
+    - [Homestead](/homestead)
     - [Installing](/installing)
     - [Updating](/updating)
     - [Licensing](/licensing)
