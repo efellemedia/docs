@@ -83,7 +83,20 @@ Finally, use the following command to run the FusionCMS Console Installer from y
 $ php artisan fusion:install
 ```
 
-The Console Installer will walk you through the steps required to configuring FusionCMS for installation.
+The console installer will walk you through the steps required to configuring FusionCMS for installation.
+
+The console installer also supports a handful of useful flags. These can help speed up the installation process.
+
+
+- **--dev**: Enables debug mode which will display detailed error pages during local development.
+- **--quick**: Utilizes the default values for the installation process and skips the installation wizard.
+- **--url[=URL]**: Assign the URL to be used during installation. Can be used in combination with the `--quick` flag.
+- **--host[=HOST]**: Assign the database host to be used during installation. Can be used in combination with the `--quick` flag.
+- **--database[=DATABASE]**: Assign the database name to be used during installation. Can be used in combination with the `--quick` flag.
+- **--username[=USERNAME]**: Assign the database username to be used during installation. Can be used in combination with the `--quick` flag.
+- **--password[=PASSWORD]**: Assign the database password to be used during installation. Can be used in combination with the `--quick` flag.
+- **--charset[=CHARSET]**: Assign the database charset to be used during installation. Can be used in combination with the `--quick` flag.
+- **--collation[=COLLATION]**: Assign the database collation to be used during installation. Can be used in combination with the `--quick` flag.
 
 ## Step Five: Register License Key
 Once FusionCMS is installed, log in under the administrator account, head to **Settings**, click the *License* tab, and enter your valid license key here.
