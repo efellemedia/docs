@@ -55,7 +55,7 @@ During the upgrade process you may encounter a directory error: `mkdir(): File e
 
 Single select asset or entry now return the asset as a collection immediately, rather than waiting for a `@foreach` or a `->get()`. Using a `@foreach` to pull this type of data will no longer work as it did prior to v5.6.
 
-### Example of code that used to work but will likely throw an error now:
+### Example of code that used to work:
 
 ```html
 {{-- Call to Action --}}
