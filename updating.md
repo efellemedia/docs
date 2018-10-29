@@ -29,11 +29,11 @@ Note, you don't need to call `get_asset` any longer as images are automatically 
 @endif
 ```
 
----
+## Updating to 5.6
 
-## Updating to 5.6.9
+**Estimated Update Time: 10 Minutes - 1 Hour**
 
-**Estimated Update Time: 10 Minutes**
+> During the upgrade process you may encounter a directory error: `mkdir(): File exists`. To resolve, check for and delete the `storage/temp` folder. This is related to a reported bug that does not recursively apply the same permissions to folders inside of the storage folder, thus denying permission to delete the temp directory and create a new one during the upgrade process.
 
 - **Create a manual backup**, a proceed with the standard upgrade process.
 - Once upgraded, bring your site back down for maintenance: `php artisan down`
@@ -44,43 +44,6 @@ Note, you don't need to call `get_asset` any longer as images are automatically 
     3. `php artisan up`
 
 You should now be fully upgrade.
-
----
-
-## Updating to 5.6
-
-**Estimated Update Time: 1 Hour**
-
-During the upgrade process you may encounter a directory error: `mkdir(): File exists`. To resolve, check for and delete the `storage/temp` folder. This is related to a reported bug that does not recursively apply the same permissions to folders inside of the storage folder, thus denying permission to delete the temp directory and create a new one during the upgrade process.
-
-Single select asset or entry now return the asset as a collection immediately, rather than waiting for a `@foreach` or a `->get()`. Using a `@foreach` to pull this type of data will no longer work as it did prior to v5.6.
-
-### Example of code that used to work:
-
-```html
-{{-- Call to Action --}}
-@if(!empty($overview->call_to_action))
-    @foreach($overview->call_to_action->get() as $cta)
-        @include('partials.layout.calltoaction',[
-            'background_image' => $cta->background_image,
-            'content' => $cta->content
-        ])
-    @endforeach
-@endif
-```
-
-### Example of a way to pull this data now:
-
-```html
-{{-- Call to Action --}}
-@if(!empty($overview->call_to_action))
-    @php($cta = $overview->call_to_action)
-    @include('partials.layout.calltoaction',[
-        'background_image' => $cta->background_image,
-        'content' => $cta->content
-    ])
-@endif
-```
 
 ---
 
