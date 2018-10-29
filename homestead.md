@@ -1,11 +1,11 @@
 # Homestead
-
 As FusionCMS is built on Laravel, we pretty much follow the standard local development workflow as you would find with any Laravel developer. For local development, we use the official Laravel Homestead Vagrant box that provides all the necessary software and libraries. If you're not familiar with virtual boxes, you're in for a treat! With a virtual box development environment, you do not need to worry about messing up your operating system. Virtual boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
 Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web server, PHP 7.2, PHP 7.1, PHP 7.0, MySQL, PostgreSQL, Redis, Memcached, Node, and all of the other goodies you need to develop amazing websites.
 
 > If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.
 
+<a name="included-software"></a>
 ## Included Software
 - Ubuntu 18.04
 - Git
@@ -33,9 +33,11 @@ Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web 
 - Go
 - Minio
 
+<a name="installation-and-setup"></a>
 ## Installation and Setup
 Before launching your Homestead environment, you must install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html). Both of these offer easy-to-use visual installers for all popular operating systems.
 
+<a name="installing-the-homestead-vagrant-box"></a>
 ### Installing The Homestead Vagrant Box
 Once VirtualBox and Vagrant have been installed, the next step is adding the `laravel/homestead` box to your Vagrant installation using the following command in your terminal. It will take a few minutes to download the box, depending on your internet connection speed:
 
@@ -45,6 +47,7 @@ vagrant box add laravel/homestead
 
 If this command fails, make sure your Vagrant installation is up to date.
 
+<a name="installing-homestead"></a>
 ### Installing Homestead
 Next you will need to clone the Homestead repository to your local machine. We suggest cloning this into a `Homestead` folder within your **home** directory:
 
@@ -73,9 +76,11 @@ bash init.sh
 init.bat
 ```
 
+<a name="configuring-homestead"></a>
 ## Configuring Homestead
 The previously created `Homestead.yaml` file contains all the configuration options for your Homestead environment. Below we'll go through some of the common things you'll be working with frequently.
 
+<a name="setting-your-provider"></a>
 ### Setting Your Provider
 Homestead does support more than just VirtualBox as your provider. If you are using something other than VirtualBox, you will need to update Homestead with your desired provider:
 
@@ -85,6 +90,7 @@ provider: virtualbox
 
 Supported Options: `virtualbox`, `vmware_fusion`, `vmware_workstation`, or `parallels`.
 
+<a name="configuring-shared-folders"></a>
 ### Configuring Shared Folders
 The `folders` property of the Homestead configiration file lists all of the folders you wish to share with your Homestead environment. As files within these folders are changed, they will be kept in sync between your local machine and the Homestead environment. You may configure as many shared folders as necessary. Two common folders we usually add here are the `Code` and `Sites` folders within our home directory.
 
@@ -127,6 +133,7 @@ folders:
           rsync__exclude: ["node_modules"]
 ```
 
+<a name="configuring-nginx-sites"></a>
 ### Configuring Nginx Sites
 Not familiar with Nginx? No problem. The `sites` property allows you to easily map a "domain" to a folder in your Homestead environment. A sample site configuration is included in the Homestead configuration file. Again, you may add as many sites to your Homestead environment as necessary.
 
@@ -138,6 +145,7 @@ sites:
 
 If you change the `sites` property after provisioning the Homestead box, you should re-run `vagrant reload --provision` to update the Nginx configuration on the virtual machine.
 
+<a name="the-hosts-file"></a>
 ### The Hosts File
 You must add the "domains" for your Nginx sites to the `hosts` file on your machine. The `hosts` file will redirect requests for your Homestead sites into your Homestead machine. On Mac and Linux, this file is located at `/etc/hosts`. On Windows, it is located at `C:\Windows\System32\drivers\etc\hosts`. The line you add to this file will look like the following:
 
@@ -151,6 +159,7 @@ Make sure the IP address listed is the one set in your Homestead configuration f
 https://example.test
 ```
 
+<a name="database-backups"></a>
 ## Database Backups
 Homestead can automatically backup your database when your Vagrant box is destroyed. To utilize this feature, you must be using Vagrant 2.1.0 or greater. Or, if you are using an older version of Vagrant, you must install the `vagrant-triggers` plug-in. To enable automatic database backups, add the following line to your Homestead configuration file:
 
@@ -165,6 +174,7 @@ Once you have edited the Homestead configuration file to your liking, run the `v
 
 To destroy the machine, you may use the `vagrant destroy --force` command.
 
+<a name="aliases"></a>
 ## Aliases
 You may add Bash aliases to your Homestead machine by modifying the `aliases` file within your Homestead directory:
 

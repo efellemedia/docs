@@ -2,14 +2,11 @@
 
 The input fieldtype is the most basic fieldtype available. The default type allows users to input simple text. Depending on the need, there are additional input types that can be selected to determine the type of text content the field will store.
 
-## Casts
-Input fieldtypes return their values as a `string`.
-
-## Default
-The default value returned by an input fieldtype is an empty `string`.
+## Data Structure
+The input fieldtype is as simple as it gets. Values are returned as a `string`. If no content is present, `null` is returned.
 
 ## Settings
-Input fieldtypes have the following settings:
+This fieldtype supports the following settings:
 
 - **Type** &mdash; Select one of seven different input types (text, email, hidden, password, search, telephone number, and url)
 - **Read Only** &mdash; Determine if the field should be readonly or not
@@ -19,6 +16,6 @@ Input fieldtypes have the following settings:
 - **Class** &mdash; Define sets of CSS classes to be reference in the active public theme
 
 ## Validation
-Input fieldtypes have the following validation options:
+This fieldtype supports the following validation settings:
 
 - **Required** &mdash; Determine if the field is required or not

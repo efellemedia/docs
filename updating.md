@@ -1,10 +1,106 @@
 # Updating
+> We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
 
-## Updating To 5.1 From 5.0
+## Updating To 5.10
+
+**Estimated Update Time: 5 Minutes - 1 Hour**
+
+### Navigation Module
+Any assigned fieldtypes to navigation menus were not originally resolving their values through the proper channels. v5.10 fixes this issue, so any fieldtypes you had previously set must be updated to use the expected fieldtype casting as is expected anywhere else in your view files.
+
+---
+
+## Updating to 5.6.9
+
+**Estimated Update Time: 10 Minutes**
+
+- **Create a manual backup**, a proceed with the standard upgrade process.
+- Once upgraded, bring your site back down for maintenance: `php artisan down`
+- Re-import your database from the backup
+- Run the following console commands in order:
+    1. `php artisan module:migrate`
+    2. `php artisan upkeep`
+    3. `php artisan up`
+
+You should now be fully upgrade.
+
+---
+
+## Updating to 5.6
+
+**Estimated Update Time: 1 Hour**
+
+During the upgrade process you may encounter a directory error: `mkdir(): File exists`. To resolve, check for and delete the `storage/temp` folder. This is related to a reported bug that does not recursively apply the same permissions to folders inside of the storage folder, thus denying permission to delete the temp directory and create a new one during the upgrade process.
+
+Single select asset or entry now return the asset as a collection immediately, rather than waiting for a `@foreach` or a `->get()`. Using a `@foreach` to pull this type of data will no longer work as it did prior to v5.6.
+
+### Example of code that used to work but will likely throw an error now:
+
+```php
+{{-- Call to Action --}}
+@if(!empty($overview->call_to_action))
+    @foreach($overview->call_to_action->get() as $cta)
+        @include('partials.layout.calltoaction',[
+            'background_image' => $cta->background_image,
+            'content' => $cta->content
+        ])
+    @endforeach
+@endif
+```
+
+### Example of a way to pull this data now:
+
+```php
+{{-- Call to Action --}}
+@if(!empty($overview->call_to_action))
+    @php($cta = $overview->call_to_action)
+    @include('partials.layout.calltoaction',[
+        'background_image' => $cta->background_image,
+        'content' => $cta->content
+    ])
+@endif
+```
+
+---
+
+## Updating to 5.5
+
+**Estimated Update Time: 5 Minutes**
+
+You will likely get an error during upgrade indicating “foreign id key” migration. To circumnavigate this issue, please add the following entry to the “migrations” table, incrementing the ID and Batch as needed:
+
+- `2018_07_19_185316_make_parent_id_foreign_key_null_on_delete`
+
+---
+
+## Updating to 5.4
+
+**Estimated Update Time: 5 Minutes**
+
+v5.4 introduces an update to the way we are pulling in our required Composer dependencies. We ran into an issue where one of the dependencies we had pushed a breaking change to a patch release, effectively breaking any new and existing sites attempting to upgrade.
+
+To update to v5.4, please follow the following steps:
+
+1. Open your `composer.json` file, and change the version dependency for `teamtnt/laravel-scout-tntsearch-driver` to **3.0.6**. Save the file.
+2. Delete your `storage/temp` directory if it exists.
+3. Run `composer update`
+4. Run `php artisan fusion:upgrade`
+
+---
+
+## Updating to 5.3
+
+**Estimated Update Time: 10 Minutes**
+
+1. Attempt an upgrade, it's going to fail, don't panic.
+2. Run `php artisan module:migrate matrix`
+3. Re-run the upgrade
+
+---
+
+## Updating To 5.1
 
 **Estimated Update Time: 2 Hours**
-
-> We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
 
 ### Categories Module
 

@@ -2,11 +2,10 @@
 
 The replicator fieldtype is our most advanced fieldtype to date. We pretty much took the concept of the Matrix, and jammed it into a single re-usable fieldtype. The replicator fieldtype opens up a whole other world of possibilities in structuring and delivering content. With it, you have the ability to dynamically add and control content needs on the fly.
 
-## Casts
-Replicator fieldtypes return their values as a `Collection`. Furthermore, each field nested within **sets** is casted appropriately to their assigned fieldtype.
+## Data Structure
+Replicator fieldtypes return their values as a `Collection`. Furthermore, each field nested within **sets** is casted appropriately to their assigned fieldtype. If no content is present, an empty `Collection` instance is returned.
 
-### JSON Example
-The following example shows the makeup of the stored value for replicators. They are an array of sets added during the process of adding or updating an entry. Note how each added set contains a copy of it's own information as well as the data value supplied by the user.
+The following example shows the makeup of the stored value for replicators. They are an array of sets added during the process of adding or updating an entry. Note how each added set contains a copy of it's own information in tangent with the value supplied by the user under the data attribute.
 
 ```json
 [
@@ -41,14 +40,17 @@ The following example shows the makeup of the stored value for replicators. They
 ]
 ```
 
-## Default
-The default value returned by a replicator fieldtype is an empty `Collection`.
-
 ## Settings
-The replicator fieldtype presents a builder interface to scaffold your sets and accompanying fields.
+This fieldtype presents a builder interface to scaffold your replicator sets and accompanying fields.
 
 ## Templating
-You will want to loop through your replicator content to display based on the set. You will more than likely want to control the way content is displayed depending on its set, so we do also suggest extracting your view logic out for each into its own view partial.
+You will want to loop through your replicator content to display based on the set. If your replicator is simple you may opt to use a series of `if/else` statements to style each set as necessary.
+
+```php
+
+```
+
+For a more clean and DRY approach, especially when dealing with more complex replicator sets, we recommend extracting your view logic out for each into its own view partial.
 
 ### Blog Example
 The following will demonstrate a simple Blog matrix with a Post type that contains a replicator fieldtype named **Content** with sets for **Rich Text** and **Code**.
