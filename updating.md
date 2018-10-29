@@ -8,6 +8,27 @@
 ### Navigation Module
 Any assigned fieldtypes to navigation menus were not originally resolving their values through the proper channels. v5.10 fixes this issue, so any fieldtypes you had previously set must be updated to use the expected fieldtype casting as is expected anywhere else in your view files.
 
+### Example of code that used to work but will no longer work:
+
+```html
+@if (isset($item->fields['background'][0]))
+    @php($image = get_asset($item->fields['background'][0]))
+    <div class="menu__bg lazy" style="background-image: url('{{ url('asset/'. $image->slug) }}');"></div>
+@endif
+```
+
+### Example of a way to pull this data now:
+Note, you don't need to call `get_asset` any longer as images are automatically resolved for you.
+
+```html
+@if (isset($item->fields['background']->slug))
+    {{-- Just reassigning for convenience --}}
+    @php($image = $item->fields['background'])
+
+    <div class="menu__bg lazy" style="background-image: url('{{ url('asset/'. $image->slug) }}');"></div>
+@endif
+```
+
 ---
 
 ## Updating to 5.6.9
@@ -36,7 +57,7 @@ Single select asset or entry now return the asset as a collection immediately, r
 
 ### Example of code that used to work but will likely throw an error now:
 
-```php
+```html
 {{-- Call to Action --}}
 @if(!empty($overview->call_to_action))
     @foreach($overview->call_to_action->get() as $cta)
@@ -50,7 +71,7 @@ Single select asset or entry now return the asset as a collection immediately, r
 
 ### Example of a way to pull this data now:
 
-```php
+```html
 {{-- Call to Action --}}
 @if(!empty($overview->call_to_action))
     @php($cta = $overview->call_to_action)
