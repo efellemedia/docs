@@ -8,7 +8,7 @@
 ### Navigation Module
 Any assigned fieldtypes to navigation menus were not originally resolving their values through the proper channels. v5.10 fixes this issue, so any fieldtypes you had previously set must be updated to use the expected fieldtype casting as is expected anywhere else in your view files.
 
-### Example of code that used to work but will no longer work:
+### Example of code that used to work:
 
 ```html
 @if (isset($item->fields['background'][0]))
