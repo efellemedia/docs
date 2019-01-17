@@ -59,7 +59,9 @@ You may also pass through a second parameter to limit the entries from a specifi
 $articles = matrix_entries('support', 'faq');
 ```
 
-#### Query Scopes
+---
+
+### Query Scopes
 The Matrix Entry model instance provides easy to use query scopes for common queries used in pulling and sorting content. Query scopes are easy to use, only requiring you to chain them on to your query:
 
 ```php
@@ -70,16 +72,16 @@ matrix_entries('blog')
     ->paginate(15);
 ```
 
-##### `enabled()`
+#### `enabled()`
 Filters out disabled items.
 
-##### `disabled()`
+#### `disabled()`
 Filters out enabled items.
 
-##### `live()`
+#### `live()`
 Filters out items that have a `publish_at` greater than today's date, as well as items that have a `expire_at` value equal or less than today's date.
 
-##### `sorted()`
+#### `sorted()`
 Sorts items according to the matrix type settings.
 
 ---
