@@ -1,17 +1,17 @@
-<a href="/" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
+<a href="/6.0" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
 
 - Prologue
-  - [Introduction](/api/introduction)
+  - [Introduction](/6.0/api/introduction)
 - Getting Started
-  - [Authentication](/api/authentication)
-  - [Errors](/api/errors)
-  - [HTTP Verbs](/api/http-verbs)
-  - [Parameters](/api/parameters)
+  - [Authentication](/6.0/api/authentication)
+  - [Errors](/6.0/api/errors)
+  - [HTTP Verbs](/6.0/api/http-verbs)
+  - [Parameters](/6.0/api/parameters)
 - The Basics
-  - [Pagination](/api/pagination)
-  - [Sorting and Filtering](/api/sorting-and-filtering)
+  - [Pagination](/6.0/api/pagination)
+  - [Sorting and Filtering](/6.0/api/sorting-and-filtering)
 - Endpoints
-  - [Categories](/api/categories)
-  - [Matrix](/api/matrix)
+  - [Categories](/6.0/api/categories)
+  - [Matrix](/6.0/api/matrix)
 - Guides
-  - [Using Postman](/api/using-postman)
+  - [Using Postman](/6.0/api/using-postman)

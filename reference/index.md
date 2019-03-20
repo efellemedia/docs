@@ -1,26 +1,26 @@
-<a href="/" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
+<a href="/6.0" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
 
 - Prologue
-  - [Introduction](/reference/introduction)
+  - [Introduction](/6.0/reference/introduction)
 - The Basics
-  - [SEO](/reference/seo)
+  - [SEO](/6.0/reference/seo)
 - Frontend
-  - [Font Awesome](/reference/fontawesome)
+  - [Font Awesome](/6.0/reference/fontawesome)
 - Helpers
-  - [API](/reference/api-helpers)
-  - [Application](/reference/application-helpers)
-  - [Arrays](/reference/array-helpers)
-  - [Assets](/reference/asset-helpers)
-  - [Category](/reference/category-helpers)
-  - [Form](/reference/form-helpers)
-  - [Matrix](/reference/matrix-helpers)
-  - [Miscellaneous](/reference/miscellaneous-helpers)
-  - [Paths](/reference/path-helpers)
-  - [Strings](/reference/string-helpers)
-  - [URLs](/reference/url-helpers)
+  - [API](/6.0/reference/api-helpers)
+  - [Application](/6.0/reference/application-helpers)
+  - [Arrays](/6.0/reference/array-helpers)
+  - [Assets](/6.0/reference/asset-helpers)
+  - [Category](/6.0/reference/category-helpers)
+  - [Form](/6.0/reference/form-helpers)
+  - [Matrix](/6.0/reference/matrix-helpers)
+  - [Miscellaneous](/6.0/reference/miscellaneous-helpers)
+  - [Paths](/6.0/reference/path-helpers)
+  - [Strings](/6.0/reference/string-helpers)
+  - [URLs](/6.0/reference/url-helpers)
 - Models
-  - [Asset](/reference/asset-model)
-  - [Category](/reference/category-model)
+  - [Asset](/6.0/reference/asset-model)
+  - [Category](/6.0/reference/category-model)
 - Support
-  - [Collections](/reference/collections)
-  - [Glide](/reference/glide)
+  - [Collections](/6.0/reference/collections)
+  - [Glide](/6.0/reference/glide)
