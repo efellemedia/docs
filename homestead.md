@@ -1,7 +1,7 @@
 # Homestead
 As FusionCMS is built on Laravel, we pretty much follow the standard local development workflow as you would find with any Laravel developer. For local development, we use the official Laravel Homestead Vagrant box that provides all the necessary software and libraries. If you're not familiar with virtual boxes, you're in for a treat! With a virtual box development environment, you do not need to worry about messing up your operating system. Virtual boxes are completely disposable. If something goes wrong, you can destroy and re-create the box in minutes!
 
-Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web server, PHP 7.2, PHP 7.1, PHP 7.0, MySQL, PostgreSQL, Redis, Memcached, Node, and all of the other goodies you need to develop amazing websites.
+Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web server, PHP 7.3, PHP 7.2, PHP 7.1, PHP 7.0, MySQL, PostgreSQL, Redis, Memcached, Node, and all of the other goodies you need to develop amazing websites.
 
 > If you are using Windows, you may need to enable hardware virtualization (VT-x). It can usually be enabled via your BIOS. If you are using Hyper-V on a UEFI system you may additionally need to disable Hyper-V in order to access VT-x.
 
@@ -9,10 +9,9 @@ Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web 
 ## Included Software
 - Ubuntu 18.04
 - Git
+- PHP 7.3
 - PHP 7.2
 - PHP 7.1
-- PHP 7.0
-- PHP 5.6
 - Nginx
 - Apache (Optional)
 - MySQL
@@ -27,6 +26,7 @@ Homestead runs on any Windows, Mac, or Linux system, and includes the Nginx web 
 - Mailhog
 - Neo4j (Optional)
 - MongoDB (Optional)
+- Elasticsearch (Optional)
 - ngrok
 - wp-cli
 - Zend Z-Ray
@@ -63,7 +63,7 @@ You should then check out a tagged version of Homestead since the `master` branc
 cd ~/Homestead
 
 // Clone the desired release...
-git checkout v7.16.1
+git checkout v8.0.1
 ```
 
 Once you have cloned the Homestead repository, run the `bash init.sh` command from the Homestead directory to create the `Homestead.yaml` configuration file. The `Homestead.yaml` file will be placed in the Homestead directory:
@@ -88,7 +88,7 @@ Homestead does support more than just VirtualBox as your provider. If you are us
 provider: virtualbox
 ```
 
-Supported Options: `virtualbox`, `vmware_fusion`, `vmware_workstation`, or `parallels`.
+Supported Options: `virtualbox`, `vmware_fusion`, `vmware_workstation`, `parallels`, or 'hyperv.
 
 <a name="configuring-shared-folders"></a>
 ### Configuring Shared Folders
@@ -276,7 +276,7 @@ By default, the following ports are forwarded to your Homestead environment:
 - **MySQL:** 33060 → Forwards to 3306
 - **PostgreSQL:** 54320 → Forwards to 5432
 - **MongoDB:** 27017 → Forwards to 27017
-- **Mailhob:** 8025 → Forwards to 8025
+- **Mailhog:** 8025 → Forwards to 8025
 - **Minio:** 9600 → Forwards to 9600
 
 ### Forwarding Additional Ports
@@ -309,22 +309,21 @@ share example.test -region=eu -subdomain=fusioncms
 > Remember, Vagrant is inherently insecure and you are exposing your virtual machine to the Internet when running the `share` command.
 
 ## Multiple PHP Versions
-Homestead 6 introduced support for multiple versions of PHP on the same virtual machine. You may specify which version of PHP to use for a given site within your Homestead configuration file. The available PHP versions are: "5.6", "7.0", "7.1" and "7.2" (the default):
+Homestead 6 introduced support for multiple versions of PHP on the same virtual machine. You may specify which version of PHP to use for a given site within your Homestead configuration file. The available PHP versions are: "7.1", "7.2", and "7.3" (the default):
 
 ```yaml
 sites:
     - map: example.test
       to: /home/vagrant/Sites/example/publix
-      php: "5.6"
+      php: "7.1"
 ```
 
 In addition, you may use any of the supported PHP versions via the CLI:
 
 ```sh
-php5.6 artisan list
-php7.0 artisan list
 php7.1 artisan list
 php7.2 artisan list
+php7.3 artisan list
 ```
 
 ## Mail
@@ -337,4 +336,12 @@ You can update Homestead in two simple steps. First, you should update the Vagra
 homestead box update
 ```
 
-Next, you need to update the Homestead source code. If you cloned the repository you can `git pull origin master` at the location you originally cloned the repository.
+Next, you need to update the Homestead source code. If you cloned the repository you can run the following commands at the location you originally cloned the repository:
+
+```
+git fetch
+
+git checkout v8.0.1
+```
+
+These commands pull the latest Homestead code from the GitHub repository, fetches the latest tags, and then checks out the latest tagged release. You can find the latest stable release version on the [GitHub releases page](https://github.com/laravel/homestead/releases).

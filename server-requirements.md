@@ -1,10 +1,10 @@
 # Server Requirements
 
-FusionCMS has a few system requirements. If you are developing locally on your machine, you don't have to worry about any of these details as [Homestead](homestead) takes care of everything for you. However, if you are a server admin or are otherwise installing FusionCMS on a server, you will need to make sure your server meets the following requirements:
+FusionCMS has a few system requirements. If you are developing locally on your machine, you don't have to worry about any of these details as [Homestead](/{{version}}/homestead) takes care of everything for you. However, if you are a server admin or are otherwise installing FusionCMS on a server, you will need to make sure your server meets the following requirements:
 
 - Apache or Nginx
-- PHP >= 5.6.4
-- MySQL >= 5.6
+- PHP >= 7.1.3
+- MySQL >= 5.7
 - GD Image Library
 - Beanstalkd
 - Supervisor
@@ -13,6 +13,9 @@ FusionCMS has a few system requirements. If you are developing locally on your m
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 - XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- BCMath PHP Extension
 
 ## Server Configuration
 
@@ -26,6 +29,9 @@ If the `.htaccess` file that ships with FusionCMS does not work with your Apache
 ```
 Options +FollowSymLinks
 RewriteEngine On
+
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -41,4 +47,4 @@ location / {
 }
 ```
 
-Of course, when using [Homestead](homestead), pretty URLs will be automatically configured.
+Of course, when using [Homestead](/{{version}}/homestead), pretty URLs will be automatically configured.
