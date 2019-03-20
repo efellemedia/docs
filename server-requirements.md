@@ -1,6 +1,6 @@
 # Server Requirements
 
-FusionCMS has a few system requirements. If you are developing locally on your machine, you don't have to worry about any of these details as [Homestead](homestead) takes care of everything for you. However, if you are a server admin or are otherwise installing FusionCMS on a server, you will need to make sure your server meets the following requirements:
+FusionCMS has a few system requirements. If you are developing locally on your machine, you don't have to worry about any of these details as [Homestead](/{{version}}/homestead) takes care of everything for you. However, if you are a server admin or are otherwise installing FusionCMS on a server, you will need to make sure your server meets the following requirements:
 
 - Apache or Nginx
 - PHP >= 5.6.4
@@ -41,4 +41,4 @@ location / {
 }
 ```
 
-Of course, when using [Homestead](homestead), pretty URLs will be automatically configured.
+Of course, when using [Homestead](/{{verison}}/homestead), pretty URLs will be automatically configured.

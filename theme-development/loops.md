@@ -23,7 +23,7 @@ In addition to conditional statements, Blade provides simple directives for work
 ```
 
 > #### Note
-> When looping, you may use the [loop variable](the-loop-variable) to gain valuable information about the loop, such as whether you are in the first or last iteration through the loop.
+> When looping, you may use the [loop variable](/{{version}}/the-loop-variable) to gain valuable information about the loop, such as whether you are in the first or last iteration through the loop.
 
 When using loops you may also end the loop or skip the current iteration:
 

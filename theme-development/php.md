@@ -9,4 +9,4 @@ In some situations, it's useful to embed PHP code into your views. You can use t
 ```
 
 > #### Warning
-> While Blade provides this feature, using it frequently may be a signal that you have too much logic embedded within your template. In this case you should look to moving your logic to a dedicated [view composer](view-composers).
+> While Blade provides this feature, using it frequently may be a signal that you have too much logic embedded within your template. In this case you should look to moving your logic to a dedicated [view composer](/{{version}}/view-composers).

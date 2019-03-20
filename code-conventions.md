@@ -1,6 +1,6 @@
 # Code Conventions
 
-While the [Coding Standards](coding-standards) document describes the coding standards for FusionCMS, this document describes coding standards and conventions used in the core codebase to make it more consistent and predictable.
+While the [Coding Standards](/{{version}}/coding-standards) document describes the coding standards for FusionCMS, this document describes coding standards and conventions used in the core codebase to make it more consistent and predictable.
 
 ## Method Names
 When an object has a "main" many relation with related "things" (objects, parameters, ...), the method names are normalized:

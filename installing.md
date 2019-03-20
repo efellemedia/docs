@@ -5,7 +5,7 @@ Before installing FusionCMS, make sure you've got everything you need:
 #### Checklist
 - A valid FusionCMS license key
 - [Composer](https://getcomposer.org/)
-- A web server that meets FusionCMS' [server requirements](server-requirements)
+- A web server that meets FusionCMS' [server requirements](/{{version}}/server-requirements)
 - An FTP client (we recommend [Forklift](http://www.binarynights.com/forklift/))
 - MySQL access, either via a web-based tool like phpMyAdmin or a standalone app like [Sequel Pro](https://www.sequelpro.com/)
 - Your favorite text editor

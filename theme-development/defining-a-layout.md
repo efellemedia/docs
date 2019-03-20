@@ -23,4 +23,4 @@ Two of the primary benefits of using Blade are template inheritance and sections
 
 As you can see, this file contains typical HTML mark-up. However, take note of the `@section` and `@yield` directives. The `@section` directive, as the name implies, defines a section of content, while the `@yield` directive is used to display the contents of a given section.
 
-Now that we have defined a layout for our theme, let's define a child page that inherits the layout as outlined in [Extending A Layout](extending-a-layout).
+Now that we have defined a layout for our theme, let's define a child page that inherits the layout as outlined in [Extending A Layout](/{{version}}/extending-a-layout).

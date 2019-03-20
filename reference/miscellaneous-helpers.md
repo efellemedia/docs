@@ -160,7 +160,7 @@ cache(['key' => 'value'], Carbon::now()->addSeconds(10));
 <a name="method-collect"></a>
 ### `collect()`
 
-The `collect` function creates a [collection](collections) instance from the given array:
+The `collect` function creates a [collection](/{{version}}/collections) instance from the given array:
 
 ```
 $collection = collect(['taylor', 'abigail']);

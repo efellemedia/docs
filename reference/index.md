@@ -1,26 +1,26 @@
-<a href="/" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
+<a href="/{{version}}" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
 
 - Prologue
-  - [Introduction](/reference/introduction)
+  - [Introduction](/{{version}}/reference/introduction)
 - The Basics
-  - [SEO](/reference/seo)
+  - [SEO](/{{version}}/reference/seo)
 - Frontend
-  - [Font Awesome](/reference/fontawesome)
+  - [Font Awesome](/{{version}}/reference/fontawesome)
 - Helpers
-  - [API](/reference/api-helpers)
-  - [Application](/reference/application-helpers)
-  - [Arrays](/reference/array-helpers)
-  - [Assets](/reference/asset-helpers)
-  - [Category](/reference/category-helpers)
-  - [Form](/reference/form-helpers)
-  - [Matrix](/reference/matrix-helpers)
-  - [Miscellaneous](/reference/miscellaneous-helpers)
-  - [Paths](/reference/path-helpers)
-  - [Strings](/reference/string-helpers)
-  - [URLs](/reference/url-helpers)
+  - [API](/{{version}}/reference/api-helpers)
+  - [Application](/{{version}}/reference/application-helpers)
+  - [Arrays](/{{version}}/reference/array-helpers)
+  - [Assets](/{{version}}/reference/asset-helpers)
+  - [Category](/{{version}}/reference/category-helpers)
+  - [Form](/{{version}}/reference/form-helpers)
+  - [Matrix](/{{version}}/reference/matrix-helpers)
+  - [Miscellaneous](/{{version}}/reference/miscellaneous-helpers)
+  - [Paths](/{{version}}/reference/path-helpers)
+  - [Strings](/{{version}}/reference/string-helpers)
+  - [URLs](/{{version}}/reference/url-helpers)
 - Models
-  - [Asset](/reference/asset-model)
-  - [Category](/reference/category-model)
+  - [Asset](/{{version}}/reference/asset-model)
+  - [Category](/{{version}}/reference/category-model)
 - Support
-  - [Collections](/reference/collections)
-  - [Glide](/reference/glide)
+  - [Collections](/{{version}}/reference/collections)
+  - [Glide](/{{version}}/reference/glide)
