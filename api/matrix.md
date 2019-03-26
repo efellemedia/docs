@@ -100,7 +100,7 @@ GET /api/v1/matrix/{collection}
 List all entries under the given matrix collection and type.
 
 ```txt
-GET /api/v1/matrix/{collection}/type/{type}/entries
+GET /api/v1/matrix/{collection}/types/{type}/entries
 ```
 
 ##### Query Parameters
@@ -117,7 +117,7 @@ GET /api/v1/matrix/{collection}/type/{type}/entries
 List all categories associated with the given matrix entry by its slug.
 
 ```txt
-GET /api/v1/matrix/{collection}/type/{type}/entries/{entry}/categories
+GET /api/v1/matrix/{collection}/types/{type}/entries/{entry}/categories
 ```
 
 ##### Query Parameters
@@ -134,7 +134,7 @@ GET /api/v1/matrix/{collection}/type/{type}/entries/{entry}/categories
 Get a single matrix entry by its slug under the given matrix collection and type.
 
 ```txt
-GET /api/v1/matrix/{collection}/type/{type}/entries/{entry}
+GET /api/v1/matrix/{collection}/types/{type}/entries/{entry}
 ```
 
 ---
@@ -145,7 +145,7 @@ GET /api/v1/matrix/{collection}/type/{type}/entries/{entry}
 Create a matrix entry under the given matrix collection and type.
 
 ```txt
-POST /api/v1/matrix/{collection}/type/{type}/entries
+POST /api/v1/matrix/{collection}/types/{type}/entries
 ```
 
 ---
@@ -156,7 +156,7 @@ POST /api/v1/matrix/{collection}/type/{type}/entries
 Edit an existing matrix entry by its ID under the given matrix collection and type.
 
 ```txt
-PATCH /api/v1/matrix/{collection}/type/{type}/entries/{id}
+PATCH /api/v1/matrix/{collection}/types/{type}/entries/{id}
 ```
 
 ---
@@ -167,5 +167,5 @@ PATCH /api/v1/matrix/{collection}/type/{type}/entries/{id}
 Delete an existing matrix entry by its ID under the given matrix collection and type.
 
 ```txt
-DELETE /api/v1/matrix/{collection}/type/{type}/entries/{id}
+DELETE /api/v1/matrix/{collection}/types/{type}/entries/{id}
 ```
