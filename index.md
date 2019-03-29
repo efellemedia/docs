@@ -11,5 +11,6 @@
     - [Documentation](/{{version}}/documentation)
 - Development
     - [Core Development...](/{{version}}/core-development)
+    - [Module Development...](/{{version}}/module-development)
     - [Environments](/{{version}}/environments)
     - [Modes](/{{version}}/modes)

@@ -1,4 +1,4 @@
-<a href="/{{version}}" class="rounded-full bg-charcoal-darker text-charcoal-lighter text-center text-sm font-bold hover:text-charcoal-lightest w-full px-4 py-1 block">Back to Index</a>
+<a href="/{{version}}" class="back-to-index">Back to Index</a>
 
 - Prologue
     - [Introduction](/{{version}}/core-development/introduction)
