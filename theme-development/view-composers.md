@@ -39,11 +39,12 @@ class TestComposer
 Just before the view is rendered, the composer's `compose` method is called, where you may then use the `with` method to bind data to the view.
 
 ## Attaching A Composer to Multiple Views
-You may attach a single view composer to multiple views at once by passing an array of views as the first argument in our `composer` theme manifest property:
+If you need to attach a view composer to multiple views, just list them out, one by one:
 
 ```json
 "composers": {
-    ["index", "profile"]: "TestComposer"
+    "index": "TestComposer",
+    "profiles.index": "TestComposer"
 }
 ```
 
@@ -51,6 +52,6 @@ The `composer` theme manifest property also accepts the `*` character as a wildc
 
 ```json
 "composers": {
-    ["*"]: "TestComposer"
+    "*": "TestComposer"
 }
 ```
