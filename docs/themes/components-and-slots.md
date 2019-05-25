@@ -1,4 +1,12 @@
+---
+title: Components & Slots
+---
+
 # Components & Slots
+
+[[toc]]
+
+---
 
 Components and slots provide similar benefits to sections and layouts; however, some may find the mental model of components and slots easier to understand. First, let's imagine a reusable "alert" component we would like to reuse throughout our application:
 

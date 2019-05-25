@@ -1,4 +1,12 @@
+---
+title: Working With Javascript Frameworks
+---
+
 # Working With JavaScript Frameworks
+
+[[toc]]
+
+---
 
 Since many JavaScript frameworks also use "curly" braces to indicate a given expression should be displayed in the browser, you may use the `@` symbol to inform the Blade rendering engine an expression should remain untouched. For example:
 

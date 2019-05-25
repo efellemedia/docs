@@ -1,4 +1,12 @@
+---
+title: Directory Structure
+---
+
 # Directory Structure
+
+[[toc]]
+
+---
 
 All themes are stored within the `public/themes` directory. Let's look at what a typical theme directory structure will look like, and explain each part of it:
 

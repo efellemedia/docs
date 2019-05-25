@@ -1,4 +1,12 @@
+---
+title: Introduction
+---
+
 # Displaying Data
+
+[[toc]]
+
+---
 
 You may display data passed to your Blade views by wrapping the variable in curly braces. For example you may display the contents of the name variable like so:
 
@@ -12,5 +20,6 @@ Of course, you are not limited to displaying the contents of the variables passe
 The current UNIX timestamp is {{ time() }}
 ```
 
-> #### Note
-> Blade `{{ }}` statements are automatically sent through PHP's `htmlentities` function to prevent XSS attacks.
+::: tip
+Blade `{{ }}` statements are automatically sent through PHP's `htmlentities` function to prevent XSS attacks.
+:::

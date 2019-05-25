@@ -1,4 +1,12 @@
+---
+title: If Statements
+---
+
 # If Statements
+
+[[toc]]
+
+---
 
 You may construct `if` statements using the `@if`, `@elseif`, `@else`, and `@endif` directives. These directives function identically to their PHP counterparts:
 

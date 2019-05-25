@@ -1,4 +1,12 @@
+---
+title: Blueprints
+---
+
 # Blueprints
+
+[[toc]]
+
+---
 
 Blueprints are a powerful feature that compliments the Matrix module to quickly scaffold collections.
 
@@ -35,8 +43,9 @@ types:
 ## Structure
 Blueprints are structured in three "sections," each corrisponding to the three structures that make up the Matrix; Collection, Types, and Fields.
 
-> ### Key Takeaway
-> The YAML structure is a waterfall, starting at the top level container (collection) cascading down (types) to the minute details (fields). They key-value structure follows the **same** names as the field names within the HTML form for each of these sections.
+::: tip
+The YAML structure is a waterfall, starting at the top level container (collection) cascading down (types) to the minute details (fields). They key-value structure follows the **same** names as the field names within the HTML form for each of these sections.
+:::
 
 ### Collection
 The top level structure of the blueprint comprises of the Collection settings. Each blueprint contains the scaffolding for **one** and only one Collection.

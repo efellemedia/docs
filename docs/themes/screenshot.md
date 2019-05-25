@@ -1,4 +1,12 @@
+---
+title: Screenshot
+---
+
 # Screenshot
+
+[[toc]]
+
+---
 
 All themes are required to be bundled with an accompanying screenshot image. This is to show an accurate representation of the theme to give users a quick preview when determining a theme to choose from.
 

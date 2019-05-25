@@ -1,4 +1,12 @@
+---
+title: Overloading Modules
+---
+
 # Overloading Modules
+
+[[toc]]
+
+---
 
 As front-end developers, you want full control over how websites look and feel. We understand that, and while every module comes with their own set of view files, FusionCMS will let you replace any of those view files with a view file inside your theme.
 
@@ -16,12 +24,13 @@ to your theme:
 
 Now you can edit that view file however you like.
 
-> #### Note
-> Notice the pattern here: module view files are placed within a `modules` directory within your theme, under a subdirectory with a name set as the slug of the module.
->
-> - `Users` => `modules/users/`
-> - `Forms` => `modules/forms/`
-> - etc.
+::: tip
+Notice the pattern here: module view files are placed within a `modules` directory within your theme, under a subdirectory with a name set as the slug of the module.
+
+- `Users` => `modules/users/`
+- `Forms` => `modules/forms/`
+- etc.
+:::
 
 FusionCMS has an intelligent theme fallback system in place:
 

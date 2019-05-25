@@ -1,4 +1,12 @@
+---
+title: Including Sub-Views
+---
+
 # Including Sub-Views
+
+[[toc]]
+
+---
 
 Blade's `@include` directive allows you to include a Blade view from within another view. All variables that are available to the parent view will be made available to the included view:
 
@@ -30,8 +38,9 @@ If you would like to `@include` a view depending on a given boolean condition, y
 @includeWhen($boolean, 'view.name', ['some' => 'data'])
 ```
 
-> #### Note
+::: warning
 > You should avoid using the `__DIR__` and `__FILE__` constants in your Blade views, since they will refer to the location of the cached, compiled view.
+:::
 
 ## Rendering Views For Collections
 You may combine loops and includes into one line with Blade's `@each` directive:

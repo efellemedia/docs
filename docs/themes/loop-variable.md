@@ -1,4 +1,12 @@
+---
+title: The Loop Variable
+---
+
 # The Loop Variable
+
+[[toc]]
+
+---
 
 When looping, a `$loop` variable will be available inside of your loop. This variable provides access to some useful bits of information such as the current loop index and whether this is the first or last iteration through the loop:
 

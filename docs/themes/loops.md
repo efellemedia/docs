@@ -1,4 +1,12 @@
+---
+title: Loops
+---
+
 # Loops
+
+[[toc]]
+
+---
 
 In addition to conditional statements, Blade provides simple directives for working with PHP's loop structures. Again, each of these directives functions identically to their PHP counterparts:
 
@@ -22,8 +30,9 @@ In addition to conditional statements, Blade provides simple directives for work
 @endwhile
 ```
 
-> #### Note
-> When looping, you may use the [loop variable](/{{version}}/the-loop-variable) to gain valuable information about the loop, such as whether you are in the first or last iteration through the loop.
+::: tip
+When looping, you may use the [loop variable](/themes/the-loop-variable) to gain valuable information about the loop, such as whether you are in the first or last iteration through the loop.
+:::
 
 When using loops you may also end the loop or skip the current iteration:
 

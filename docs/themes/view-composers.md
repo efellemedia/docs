@@ -1,4 +1,12 @@
+---
+title: View Composers
+---
+
 # View Composers
+
+[[toc]]
+
+---
 
 View composers are classes that are called when a view is rendered. If you have data that you want to be bound to a view each time that view is rendered, a view composer can help you organize that logic into a single location. This will keep your view files nice and clean while the view composer does all the heavy lifting.
 
@@ -38,7 +46,7 @@ class TestComposer
 
 Just before the view is rendered, the composer's `compose` method is called, where you may then use the `with` method to bind data to the view.
 
-## Attaching A Composer to Multiple Views
+## Attaching to Multiple Views
 If you need to attach a view composer to multiple views, just list them out, one by one:
 
 ```json
@@ -55,3 +63,9 @@ The `composer` theme manifest property also accepts the `*` character as a wildc
     "*": "TestComposer"
 }
 ```
+
+::: warning
+While the wildcard character is great to attach view composers across all your views, it _can_ have unintended side effects. If you notice any where text, especially in email view files, limit the scope of your view composer to views that specifically need it.
+
+A good alternative to the wildcard character is to assign your view composer to yuor layout view.
+:::

@@ -1,4 +1,12 @@
+---
+title: Echoing Data If It Exists
+---
+
 # Echoing Data If It Exists
+
+[[toc]]
+
+---
 
 Sometimes you may wish to echo a variable, but you aren't sure if the variable has been set. We can express this in verbose PHP code like so:
 

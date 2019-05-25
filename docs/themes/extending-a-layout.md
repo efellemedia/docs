@@ -1,4 +1,12 @@
+---
+title: Extending A Layout
+---
+
 # Extending A Layout
+
+[[toc]]
+
+---
 
 When defining a child view, use the Blade `@extends` directive to specify which layout the child view should "inherit". Views which extend a Blade layout may inject content into the layout's sections using @section directives. Remember, the contents of these sections will be displayed in the layout using `@yield`:
 

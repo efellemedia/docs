@@ -1,4 +1,12 @@
+---
+title: Manifest
+---
+
 # Manifest
+
+[[toc]]
+
+---
 
 The theme manifest file (`theme.json`) contains basic information such as the name of the theme, description, author, URL, version, and any other information you'd like to bundle with your theme. This information is used by the CMS to display and manage the available themes to choose from from the Admin CP.
 
@@ -62,7 +70,9 @@ By using comparison operators you can specify ranges of valid versions. Valid op
 
 You can define multiple ranges. Ranges separated by a space (` `) or comma (`,`) will be treated as a **logical AND**. A double pipe (`||`) will be treated as a **logical OR**. AND has higher precedence than OR.
 
-> **Note:** Be careful when using unbounded ranges as you might end up unexpectedly installing versions that break backwards compatibility. Consider using the **caret** operator instead for safety.
+::: warning
+Be careful when using unbounded ranges as you might end up unexpectedly installing versions that break backwards compatibility. Consider using the **caret** operator instead for safety.
+:::
 
 Examples:
 - `>=1.0`
@@ -86,7 +96,9 @@ The `~` operator is best explained by example: `~1.2` is equivalent to `>=1.2 <2
 
 Example: `~1.2`
 
-> **Note:** The `~` operator has an exception on its behavior for the major release number. This means for example that `~1` is the same as `~1.0` as it will not allow the major number to increase trying to keep backwards compatibility.
+::: tip
+The `~` operator has an exception on its behavior for the major release number. This means for example that `~1` is the same as `~1.0` as it will not allow the major number to increase trying to keep backwards compatibility.
+:::
 
 #### Caret Version Range (^)
 The `^` operator behaves very similarly but it sticks closer to semantic versioning, and will always allow non-breaking updates. For example `^1.2.3` is equivalent to `>=1.2.3 <2.0.0` as none of the releases until `2.0` should break backwards compatibility. For pre-1.0 versions it also acts with safety in mind and treats `^0.3` as `>=0.3.0 <0.4.0`.
