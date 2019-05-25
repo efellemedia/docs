@@ -1,4 +1,14 @@
+---
+title: Licensing
+---
+
 # Licensing
+
+[[toc]]
+
+---
+
+
 FusionCMS is a proprietary content management system (CMS) with an opinionated approach to managing and serving content. The following details apply regardless of whether you've purchased a license yourself or received a license through an agency.
 
 ## What Licensing Protects

@@ -1,4 +1,12 @@
+---
+title: Coding Standards
+---
+
 # Coding Standards
+
+[[toc]]
+
+---
 
 When contributing code to FusionCMS, you must follow its coding standards. To make a long story short, here is the golden rule: **Imitate the existing FusionCMS codebase**.
 
@@ -130,7 +138,7 @@ class FooBar
 - Use lowercase and underscores for non-namespaced files;
 - Don't forget to look at the more verbose [Conventions](#) document for more subjective naming considerations.
 
-## Documentation
+## Doc Blocks
 - Add PHPDoc blocks for all methods and functions;
 - Group annotations together so that annotations of the same type immediately follow each other, and annotations of a different type are separated by a single blank line;
 - For type-hinting, use `bool` (instead of `boolean` or `Boolean`), `int` (instead of `integer`), and `float` (instead of `double` or `real`);

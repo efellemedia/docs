@@ -1,5 +1,9 @@
 # Documentation
 
+[[toc]]
+
+---
+
 Contributions to documentation must follow these standards to match the style and tone of the rest of the FusionCMS documentation.
 
 ## Files and Directories

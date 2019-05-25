@@ -1,11 +1,19 @@
+---
+title: Bug Reports
+---
+
 # Bug Reports
+
+[[toc]]
+
+---
 
 Whenever you find a bug in FusionCMS or any of our core applications, we kindly ask you to report it. It helps us make a better platform for everyone.
 
 Before submitting a bug report, please keep the following in mind:
 
 - Double-check the documentation to see if you're not misusing the platform.
-- Ask for assistance in the `#app-fusioncms-v5` channel on Slack.
+- Ask for assistance in the `#help-dev` channel on Slack.
 
 If your problem definitely looks like a bug, report it to the our [GitHub issue tracker](https://github.com/efellemedia/fusioncms/issues) and follow these simple rules:
 

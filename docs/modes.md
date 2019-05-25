@@ -1,4 +1,13 @@
+---
+title: Modes
+---
+
 # Modes
+
+[[toc]]
+
+---
+
 FusionCMS has a couple of modes it can be placed in for various needs. **Maintenance** mode and **suspended** mode.
 
 ## Maintenance Mode
@@ -22,7 +31,9 @@ To disable maintenance mode and bring your website back online, use the `up` com
 php artisan up
 ```
 
-> If you are developing a theme, you may customize the default maintenance mode template by defining your own template at `views/errors/503.blade.php`.
+::: tip
+If you are developing a theme, you may customize the default maintenance mode template by defining your own template at `views/errors/503.blade.php`.
+:::
 
 ### Maintenance Mode and Queues
 While your website is in maintenance mode, no queued jobs will be handled. The jobs will continue to be handled as normal once your website is out of maintenance mode.
@@ -42,7 +53,9 @@ To release a website from suspended mode, use the `release` command:
 php artisan release
 ```
 
-> The suspended mode uses its own view file separate that of maintenance mode You may override the default template within your theme at `views/errors/suspended.blade.php`.
+::: tip
+The suspended mode uses its own view file separate that of maintenance mode You may override the default template within your theme at `views/errors/suspended.blade.php`.
+:::
 
 ### Suspended Mode and Queues
 Just like with maintenance mode, queued jobs will not be handled. As soon as the website is released, the queued jobs will be handled as normal.

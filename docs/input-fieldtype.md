@@ -1,4 +1,12 @@
-# Input
+---
+title: Input
+---
+
+# Input Fieldtype
+
+[[toc]]
+
+---
 
 The input fieldtype is the most basic fieldtype available. The default type allows users to input simple text. Depending on the need, there are additional input types that can be selected to determine the type of text content the field will store.
 

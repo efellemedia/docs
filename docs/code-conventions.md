@@ -1,4 +1,12 @@
+---
+title: Code Conventions
+---
+
 # Code Conventions
+
+[[toc]]
+
+---
 
 While the [Coding Standards](/{{version}}/coding-standards) document describes the coding standards for FusionCMS, this document describes coding standards and conventions used in the core codebase to make it more consistent and predictable.
 
@@ -42,8 +50,9 @@ For many relations where the convention does not apply, the following methods mu
 | `count()` | `countXXX()` |
 | `keys()` | n/a |
 
-> #### Note
-> While "setXXX" and "replaceXXX" are very similar, there is one notable difference: "setXXX" may replace, or add new elements to the relation. "replaceXXX", on the other hand, cannot add new elements. If an unrecognized key is passed to "replaceXXX" it must throw an exception.
+::: tip
+While "setXXX" and "replaceXXX" are very similar, there is one notable difference: "setXXX" may replace, or add new elements to the relation. "replaceXXX", on the other hand, cannot add new elements. If an unrecognized key is passed to "replaceXXX" it must throw an exception.
+:::
 
 ## Slugs vs Handles
 Normally, most projects will use the term `slug` for any machine-readable notation of a name or title in regards to an item. Since FusionCMS is a large project that spans a multitude of different areas, we've decided to split the terminology and use-case for where `slug` should be used and where `handle` should be used.

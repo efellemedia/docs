@@ -1,5 +1,16 @@
+---
+title: Updating
+---
+
 # Updating
-> We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
+
+[[toc]]
+
+---
+
+::: tip
+We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
+:::
 
 ## Updating To 5.10
 
@@ -33,7 +44,9 @@ Note, you don't need to call `get_asset` any longer as images are automatically 
 
 **Estimated Update Time: 10 Minutes - 1 Hour**
 
-> During the upgrade process you may encounter a directory error: `mkdir(): File exists`. To resolve, check for and delete the `storage/temp` folder. This is related to a reported bug that does not recursively apply the same permissions to folders inside of the storage folder, thus denying permission to delete the temp directory and create a new one during the upgrade process.
+::: danger
+During the upgrade process you may encounter a directory error: `mkdir(): File exists`. To resolve, check for and delete the `storage/temp` folder. This is related to a reported bug that does not recursively apply the same permissions to folders inside of the storage folder, thus denying permission to delete the temp directory and create a new one during the upgrade process.
+:::
 
 - **Create a manual backup**, a proceed with the standard upgrade process.
 - Once upgraded, bring your site back down for maintenance: `php artisan down`
@@ -135,8 +148,8 @@ Furthermore, if you are still using the `Theme::getLayout()` method or `$theme_l
 #### Repositories have been ripped out of the matrix module
 Please ensure that you are not referencing any of the repository-specific methods and properties when using the matrix helpers.
 
-## Deprecated Repository Methods
-For further documentation on the methods available to you with this update, please refer to the Laravel documentation here: https://laravel.com/5.4/eloquent
+#### Deprecated Repository Methods
+For further documentation on the methods available to you with this update, please refer to the Laravel documentation here: [https://laravel.com/5.4/eloquent](https://laravel.com/5.4/eloquent)
 
 | From | To |
 |------|----|

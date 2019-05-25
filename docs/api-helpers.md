@@ -1,6 +1,13 @@
+---
+title: API
+---
+
 # API Helpers
 
-<a name="available-methods"></a>
+[[toc]]
+
+---
+
 ## Available Methods
 
 <div class="collection-method-list" markdown="1">
@@ -9,10 +16,8 @@
 
 </div>
 
-<a name="method-listing"></a>
 ## Method Listing
 
-<a name="method-dispatcher"></a>
 ### `dispatcher()`
 
 The `dispatcher` method returns an instance of the internal API dispatcher. This is useful to get data from the API within Blade templates.

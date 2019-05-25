@@ -1,0 +1,14 @@
+{
+  "name": "v5-docs",
+  "private": true,
+  "version": "1.0.0",
+  "repository": "git@github.com:efellemedia/docs.git",
+  "author": "efelle creative",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.48"
+  }
+}

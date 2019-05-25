@@ -1,4 +1,12 @@
-# Replicator
+---
+title: Replicator
+---
+
+# Replicator Fieldtype
+
+[[toc]]
+
+---
 
 The replicator fieldtype is our most advanced fieldtype to date. We pretty much took the concept of the Matrix, and jammed it into a single re-usable fieldtype. The replicator fieldtype opens up a whole other world of possibilities in structuring and delivering content. With it, you have the ability to dynamically add and control content needs on the fly.
 

@@ -1,4 +1,13 @@
-# Address
+---
+title: Address
+---
+
+# Address Fieldtype
+
+[[toc]]
+
+---
+
 Store addresses with optional Google Maps support to query longitude and latitude coordinates on the fly.
 
 ## Data Structure
