@@ -1,4 +1,12 @@
+---
+title: SEO
+---
+
 # SEO
+
+[[toc]]
+
+---
 
 ## Accessing The SEO Instance
 To obtain an instance of the current SEO instance via dependency injection, you should type-hint the `Modules\Seo\Handlers\SEO` class on your controller method.

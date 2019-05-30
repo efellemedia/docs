@@ -2,6 +2,14 @@ module.exports = {
     title: 'FusionCMS 5',
     description: 'FusionCMS 5 user and developer documentation.',
 
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@images': '../img',
+            },
+        },
+    },
+
     markdown: {
         toc: {
             includeLevel: [2],
@@ -12,6 +20,7 @@ module.exports = {
         sidebar: [
             {
                 title: 'Prologue',
+                collapsable: true,
                 children: [
                     '/',
                     '/licensing',
@@ -19,6 +28,7 @@ module.exports = {
             },
             {
                 title: 'Contributing',
+                collapsable: true,
                 children: [
                     '/bug-reports',
                     '/coding-standards',
@@ -28,6 +38,7 @@ module.exports = {
             },
             {
                 title: 'Getting Started',
+                collapsable: true,
                 children: [
                     '/installation',
                     '/updating',
@@ -36,13 +47,17 @@ module.exports = {
             },
             {
                 title: 'The Basics',
+                collapsable: true,
                 children: [
-                    '/modes',
-                    '/fieldtypes',
+                    '/basics/environments',
+                    '/basics/fieldtypes',
+                    '/basics/mail',
+                    '/basics/modes',
                 ],
             },
             {
                 title: 'Fieldtypes',
+                collapsable: true,
                 children: [
                     '/address-fieldtype',
                     '/input-fieldtype',
@@ -51,21 +66,28 @@ module.exports = {
             },
             {
                 title: 'Helpers',
+                collapsable: true,
                 children: [
                     '/api-helpers',
                 ],
             },
             {
-                title: 'Digging Deeper',
+                title: 'Reference',
+                collapsable: true,
                 children: [
-                    '/collections',
+                    '/reference/collections',
+                    '/reference/fontawesome',
+                    '/reference/glide',
+                    '/reference/seo',
                 ],
             },
             {
                 title: 'Developing Themes',
+                collapsable: true,
                 children: [
                     {
                         title: 'Prologue',
+                        collapsable: true,
                         children: [
                             '/themes/introduction',
                             '/themes/directory-structure',
@@ -77,6 +99,7 @@ module.exports = {
                     },
                     {
                         title: 'Blade',
+                        collapsable: true,
                         children: [
                             '/themes/blade',
                             '/themes/defining-a-layout',
@@ -89,6 +112,7 @@ module.exports = {
                     },
                     {
                         title: 'Displaying Data',
+                        collapsable: true,
                         children: [
                             '/themes/displaying-data',
                             '/themes/if-it-exists',
@@ -98,6 +122,7 @@ module.exports = {
                     },
                     {
                         title: 'Control Structures',
+                        collapsable: true,
                         children: [
                             '/themes/if-statements',
                             '/themes/loops',
@@ -110,6 +135,7 @@ module.exports = {
             },
             {
                 title: 'Developing Modules',
+                collapsable: true,
             }
         ]
     }

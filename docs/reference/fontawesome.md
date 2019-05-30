@@ -1,10 +1,21 @@
-# Font Awesome
+---
+title: FontAwesome
+---
+
+# FontAwesome
+
+[[toc]]
+
+---
+
 The Gravity admin control panel currently uses an older alpha version of the Font Awesome 5 icon set. Here we'll reference all icons available to you in this alpha set.
 
 ## Basic Usage
 You can place Font Awesome icons just about anywhere using a style prefix and the icon’s name. We’ve tried to make it so that icons will take on the characteristics and appear alongside text naturally.
 
-> Font Awesome is designed to be used with inline elements and we recommend sticking with a consistent HTML element to reference them by in your project. We like the `<i>` tag for brevity and for the fact that most folks are using `<em></em>` for emphasized/italicized semantic text these days. If that’s not your cup of tea, using a `<span>` is more semantically correct.
+::: tip
+Font Awesome is designed to be used with inline elements and we recommend sticking with a consistent HTML element to reference them by in your project. We like the `<i>` tag for brevity and for the fact that most folks are using `<em></em>` for emphasized/italicized semantic text these days. If that’s not your cup of tea, using a `<span>` is more semantically correct.
+:::
 
 | Style | Prefix | Example |
 |-------|--------|---------|

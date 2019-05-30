@@ -1,4 +1,13 @@
+---
+title: Environments
+---
+
 # Environments
+
+[[toc]]
+
+---
+
 FusionCMS has various environments to configure settings depending on where the CMS is running. For example, you may wish to use a different cache driver or theme locally than you do on your production server.
 
 To make this a cinch, FusionCMS, and by proxy Laravel, utilizes the [DotEnv](https://github.com/vlucas/phpdotenv) PHP library by Vance Lucas. In a fresh FusionCMS installation, the root of your project will contain a `.env` file where all of your custom settings will be stored.
@@ -35,4 +44,6 @@ if (App::environment(['local', 'staging'])) {
 }
 ```
 
-> The current application environment detection can be overridden by a server-level `APP_ENV` environment variable. This can be useful when you need to share the same application for different environment configurations, so you can set up a given host to match a given environment in your server's configuration.
+::: tip
+The current application environment detection can be overridden by a server-level `APP_ENV` environment variable. This can be useful when you need to share the same application for different environment configurations, so you can set up a given host to match a given environment in your server's configuration.
+:::

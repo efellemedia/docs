@@ -1,6 +1,16 @@
+---
+title: Glide
+---
+
 # Glide
 
-> The following documentation was taken straight from the [source](http://glide.thephpleague.com/) with minor modifications. It has been copied here for your convenience.
+[[toc]]
+
+---
+
+::: tip
+The following documentation was taken straight from the [source](http://glide.thephpleague.com/) with minor modifications. It has been copied here for your convenience.
+:::
 
 Glide is a wonderfully easy on-demand image manipulation library written in PHP. Its straightforward API is exposed via HTTP, similar to cloud image processing services like [Imgix](http://www.imgix.com/) and [Cloudinary](http://cloudinary.com/). Glide leverages powerful libraries like [Intervention Image](http://image.intervention.io/) (for image handling and manipulation) and [Flysystem](http://flysystem.thephpleague.com/) (for file system abstraction).
 
@@ -35,27 +45,6 @@ Glide is a wonderfully easy on-demand image manipulation library written in PHP.
 
 ---
 
-## Image API
-
-<div class="collection-method-list" markdown="1">
-
-[Adjustments](#api-adjustments)
-[Background](#api-background)
-[Border](#api-border)
-[Crop](#api-crop)
-[Effects](#api-effects)
-[Encode](#api-encode)
-[Flip](#api-flip)
-[Orientation](#api-orientation)
-[Pixel Density](#api-pixel-density)
-[Size](#api-size)
-[Watermarks](#api-watermarks)
-
-</div>
-
----
-
-<a name="api-adjustments"></a>
 ## Adjustments
 
 ### Brightness &mdash; `bri`
@@ -65,7 +54,7 @@ Adjusts the image brightness. Use values between `-100` and `+100`, where `0` re
 <img src="kayaks.jpg?w=500&bri=-25">
 ```
 
-![Brightness](/img/docs/glide_brightness.jpg)
+![Brightness](@images/glide_brightness.jpg)
 
 ### Contrast &mdash; `con`
 Adjusts the image contrast. Use values between `-100` and `+100`, where `0` represents no change.
@@ -74,7 +63,7 @@ Adjusts the image contrast. Use values between `-100` and `+100`, where `0` repr
 <img src="kayaks.jpg?w=500&con=25">
 ```
 
-![Contrast](/img/docs/glide_contrast.jpg)
+![Contrast](@images/glide_contrast.jpg)
 
 ### Gamma &mdash; `gam`
 Adjusts the image gamma. Use values between `0.1` and `9.99`.
@@ -83,7 +72,7 @@ Adjusts the image gamma. Use values between `0.1` and `9.99`.
 <img src="kayaks.jpg?w=500&gam=1.5">
 ```
 
-![Gamma](/img/docs/glide_gamma.jpg)
+![Gamma](@images/glide_gamma.jpg)
 
 ### Sharpen &mdash; `sharp`
 Sharpen the image. Use values between `0` and `100`.
@@ -92,11 +81,10 @@ Sharpen the image. Use values between `0` and `100`.
 <img src="kayaks.jpg?w=500&sharp=15">
 ```
 
-![Sharpen](/img/docs/glide_sharpen.jpg)
+![Sharpen](@images/glide_sharpen.jpg)
 
 ---
 
-<a name="api-background"></a>
 ## Background &mdash; `bg`
 Sets the background color of the image. See [colors](#colors) for more information on the available color formats.
 
@@ -104,11 +92,10 @@ Sets the background color of the image. See [colors](#colors) for more informati
 <img src="logo.png?w=400&bg=black">
 ```
 
-![Background](/img/docs/glide_background.png)
+![Background](@images/glide_background.png)
 
 ---
 
-<a name="api-border"></a>
 ## Border
 
 ### Border &mdash; `border`
@@ -118,7 +105,7 @@ Add a border to the image. Required format: `width,color,method`.
 <img src="kayaks.jpg?w=500&border=10,5000,overlay">
 ```
 
-![Border Overlay](/img/docs/glide_border_overlay.jpg)
+![Border Overlay](@images/glide_border_overlay.jpg)
 
 #### Width
 Sets the border width in pixels, or using [relative dimensions](#relative-dimensions).
@@ -137,11 +124,10 @@ Sets how the border will be displayed. Available options:
 <img src="kayaks.jpg?w=500&border=10,FFCC33,expand">
 ```
 
-![Border Expand](/img/docs/glide_border_expand.jpg)
+![Border Expand](@images/glide_border_expand.jpg)
 
 ---
 
-<a name="api-crop"></a>
 ## Crop
 
 ### Fit &mdash; `fit=crop`
@@ -151,7 +137,7 @@ Resizes the image to fill the width and height boundaries and crops any excess i
 <img src="kayaks.jpg?w=300&h=300&fit=crop">
 ```
 
-![Fit Crop](/img/docs/glide_fit_crop.jpg)
+![Fit Crop](@images/glide_fit_crop.jpg)
 
 #### Crop Position
 You can also set where the image is cropped by adding a crop position. Accepts `crop-top-left`, `crop-top`, `crop-top-right`, `crop-left`, `crop-center`, `crop-right`, `crop-bottom-left`, `crop-bottom` or `crop-bottom-right`. Default is `crop-center`, and is the same as `crop`.
@@ -174,11 +160,10 @@ Crops the image to specific dimensions prior to any other resize operations. Req
 <img src="kayaks.jpg?crop=100,100,915,155">
 ```
 
-![Crop](/img/docs/glide_crop.jpg)
+![Crop](@images/glide_crop.jpg)
 
 ---
 
-<a name="api-effects"></a>
 ## Effects
 
 ### Blur &mdash; `blur`
@@ -188,9 +173,11 @@ Adds a blur effect to the image. Use values between `0` and `100`.
 <img src="kayaks.jpg?w=500&blur=5">
 ```
 
-![Blur](/img/docs/glide_blur.jpg)
+![Blur](@images/glide_blur.jpg)
 
-> Performance intensive on larger amounts of blur with GD driver. Use with care.
+::: warning
+Performance intensive on larger amounts of blur with GD driver. Use with care.
+:::
 
 ### Pixelate &mdash; `pixel`
 Applies a pixelation effect to the image. Use values between `0` and `1000`.
@@ -199,7 +186,7 @@ Applies a pixelation effect to the image. Use values between `0` and `1000`.
 <img src="kayaks.jpg?w=500&pixel=5">
 ```
 
-![Pixelate](/img/docs/glide_pixel.jpg)
+![Pixelate](@images/glide_pixel.jpg)
 
 ### Filter &mdash; `filt`
 Applies a filter effect to the image. Accepts `greyscale` or `sepia`.
@@ -208,11 +195,10 @@ Applies a filter effect to the image. Accepts `greyscale` or `sepia`.
 <img src="kayaks.jpg?w=500&filt=sepia">
 ```
 
-![Filter](/img/docs/glide_filter.jpg)
+![Filter](@images/glide_filter.jpg)
 
 ---
 
-<a name="api-encode"></a>
 ## Encode
 
 ### Quality &mdash; `q`
@@ -222,7 +208,7 @@ Defines the quality of the image. Use values between `0` and `100`. Defaults to 
 <img src="kayaks.jpg?w=500&q=25">
 ```
 
-![Quality](/img/docs/glide_quality.jpg)
+![Quality](@images/glide_quality.jpg)
 
 ### Format &mdash; `fm`
 Encodes the image to a specific format. Accepts `jpg`, `pjpg` (progressive jpeg), `png` or `gif`. Defaults to `jpg`.
@@ -231,11 +217,10 @@ Encodes the image to a specific format. Accepts `jpg`, `pjpg` (progressive jpeg)
 <img src="kayaks.jpg?w=500&fm=gif">
 ```
 
-![Quality](/img/docs/glide_format.jpg)
+![Quality](@images/glide_format.jpg)
 
 ---
 
-<a name="api-flip"></a>
 ## Flip &mdash; `flip`
 Flips the image. Accepts `v`, `h` and `both`.
 
@@ -243,11 +228,10 @@ Flips the image. Accepts `v`, `h` and `both`.
 <img src="kayaks.jpg?h=500&flip=v">
 ```
 
-![Flip](/img/docs/glide_flip.jpg)
+![Flip](@images/glide_flip.jpg)
 
 ---
 
-<a name="api-orientation"></a>
 ## Orientation &mdash; `or`
 Rotates the image. Accepts `auto`, `0`, `90`, `180` or `270`. Default is `auto`. The `auto` option uses Exif data to automatically orient images correctly.
 
@@ -255,11 +239,10 @@ Rotates the image. Accepts `auto`, `0`, `90`, `180` or `270`. Default is `auto`.
 <img src="kayaks.jpg?h=500&or=90">
 ```
 
-![Orientation](/img/docs/glide_orientation.jpg)
+![Orientation](@images/glide_orientation.jpg)
 
 ---
 
-<a name="api-size"></a>
 ## Size
 
 ### Width &mdash; `w`
@@ -269,7 +252,7 @@ Sets the width of the image, in pixels.
 <img src="kayaks.jpg?w=500">
 ```
 
-![Width](/img/docs/glide_width.jpg)
+![Width](@images/glide_width.jpg)
 
 ### Height &mdash; `h`
 Sets the height of the image, in pixels.
@@ -278,7 +261,7 @@ Sets the height of the image, in pixels.
 <img src="kayaks.jpg?h=333">
 ```
 
-![Height](/img/docs/glide_height.jpg)
+![Height](@images/glide_height.jpg)
 
 ### Fit &mdash; `fit`
 Sets how the image is fitted to its target dimensions.
@@ -294,11 +277,10 @@ Sets how the image is fitted to its target dimensions.
 <img src="kayaks.jpg?w=300&h=300&fit=stretch">
 ```
 
-![Fit](/img/docs/glide_fit.jpg)
+![Fit](@images/glide_fit.jpg)
 
 ---
 
-<a name="api-pixel-density"></a>
 ## Pixel Density
 
 ### Device Pixel Ratio &mdash; `dpr`
@@ -308,11 +290,10 @@ The device pixel ratio is used to easily convert between CSS pixels and device p
 <img src="kayaks.jpg?w=250&dpr=2">
 ```
 
-![DPR](/img/docs/glide_dpr.jpg)
+![DPR](@images/glide_dpr.jpg)
 
 ---
 
-<a name="api-watermarks"></a>
 ## Watermarks
 
 ### Path &mdash; `mark`
@@ -322,7 +303,7 @@ Adds a watermark to the image. Must be a path to an image in the watermarks file
 <img src="kayaks.jpg?mark=logo.png">
 ```
 
-![Mark](/img/docs/glide_mark.jpg)
+![Mark](@images/glide_mark.jpg)
 
 ### Width &mdash; `markw`
 Sets the width of the watermark in pixels, or using [relative dimensions](#relative-dimensions).
@@ -380,7 +361,7 @@ Sets where the watermark is positioned. Accepts `top-left`, `top`, `top-right`, 
 <img src="kayaks.jpg?mark=logo.png&markpos=top-left">
 ```
 
-![Mark Position](/img/docs/glide_mark_pos.jpg)
+![Mark Position](@images/glide_mark_pos.jpg)
 
 ### Alpha &mdash; `markalpha`
 Sets the opacity of the watermark. Use values between `0` and `100`, where `100` is fully opaque, and `0` is fully transparent. The default value is `100`.
@@ -389,11 +370,10 @@ Sets the opacity of the watermark. Use values between `0` and `100`, where `100`
 <img src="kayaks.jpg?mark=logo.png&markalpha=50">
 ```
 
-![Mark Alpha](/img/docs/glide_mark_alpha.jpg)
+![Mark Alpha](@images/glide_mark_alpha.jpg)
 
 ---
 
-<a name="colors"></a>
 ## Colors
 
 Glide supports a variety of color formats. In addition to the 140 color names supported by all modern browsers (listed below), Glide accepts hexadecimal RGB and RBG alpha formats.
@@ -552,7 +532,6 @@ Glide supports a variety of color formats. In addition to the 140 color names su
 
 </div>
 
-<a name="relative-dimensions"></a>
 ## Relative Dimensions
 Relative dimensions allow you to specify a width or height value as a percentage of the main image. This is helpful for features like watermarks and borders.
 

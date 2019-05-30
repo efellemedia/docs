@@ -1,8 +1,16 @@
+---
+title: Mail
+---
+
 # Mail
+
+[[toc]]
+
+---
 
 FusionCMS sends out various emails to users based on various events (such as when a new user registers for an account). In order to send and receive emails through your website, you will need to configure your email settings from the Settings section of the AdminCP.
 
-![Mail Settings - General](/asset/59c1500be2757?w=600) {.mx-auto .d-block}
+<!-- ![Mail Settings - General](/asset/59c1500be2757?w=600) -->
 
 ## General Settings
 
@@ -36,11 +44,12 @@ To use the [SparkPost](https://www.sparkpost.com/) provider, simply grab the **A
 
 ![Mail Settings - SparkPost](/asset/59c1815c73268?w=600) {.mx-auto .d-block}
 
-> #### Note
-> SparkPost is an API based provider. There is additional setup required from the SparkPost side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
->
-> - [Preparing Your From Address](https://www.sparkpost.com/getting-started/getting-started-sparkpost/#preparing-your-from-address)
-> - [Create API Keys](https://www.sparkpost.com/getting-started/create-api-keys/)
+::: tip
+SparkPost is an API based provider. There is additional setup required from the SparkPost side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
+
+- [Preparing Your From Address](https://www.sparkpost.com/getting-started/getting-started-sparkpost/#preparing-your-from-address)
+- [Create API Keys](https://www.sparkpost.com/getting-started/create-api-keys/)
+:::
 
 ---
 
@@ -49,28 +58,28 @@ To use the [Mailgun](https://www.mailgun.com/) provider, simply grab the **Domai
 
 ![Mail Settings - Mailgun](/asset/59c1733a29f67?w=600) {.mx-auto .d-block}
 
-> #### Note
-> Mailgun is an API based provider. There is additional setup required from the Mailgun side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
->
-> - [Verifying Your Domain](https://documentation.mailgun.com/en/latest/user_manual.html#verifying-your-domain)
-> - [Where can I find my API key and SMTP credentials?](https://help.mailgun.com/hc/en-us/articles/203380100-Where-can-I-find-my-API-key-and-SMTP-credentials-)
+::: tip
+Mailgun is an API based provider. There is additional setup required from the Mailgun side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
+
+- [Verifying Your Domain](https://documentation.mailgun.com/en/latest/user_manual.html#verifying-your-domain)
+- [Where can I find my API key and SMTP credentials?](https://help.mailgun.com/hc/en-us/articles/203380100-Where-can-I-find-my-API-key-and-SMTP-credentials-)
+:::
 
 ---
 
-<a name="driver-mandrill"></a>
 ### Mandrill
 Mandrill is an add-on to send emails provided by [Mailchimp](https://mailchimp.com/). To use the Mandrill provider, you will need to ensure that you have Mandrill added to your Mailchimp account as an add-on. Once configured, simply grab the API key that you generated and input it within the Mandrill settings tab of your CMS.
 
 ![Mail Settings - Mandrill](/asset/59c17651ac905?w=600) {.mx-auto .d-block}
 
-> #### Note
-> Mandrill is an API based provider. There is additional setup required from the Mandrill side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
->
-> - [Add or Remove Mandrill](https://kb.mailchimp.com/mandrill/add-or-remove-mandrill)
-> - [How to Set up Sending Domains](https://mandrill.zendesk.com/hc/en-us/articles/205582387-How-to-Set-up-Sending-Domains)
+::: tip
+Mandrill is an API based provider. There is additional setup required from the Mandrill side of things on your account and server in order to proceed. Please see the following additional references if you are creating a new account.
+
+- [Add or Remove Mandrill](https://kb.mailchimp.com/mandrill/add-or-remove-mandrill)
+- [How to Set up Sending Domains](https://mandrill.zendesk.com/hc/en-us/articles/205582387-How-to-Set-up-Sending-Domains)
+:::
 
 ---
 
-<a name="driver-log"></a>
 ### Log
 The Log driver is useful only in troubleshooting emails. It does not actually send out any emails, but instead logs the output of emails to a text file on the server to aid in debugging.
