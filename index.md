@@ -6,6 +6,7 @@
     - [Updating](/{{version}}/updating)
     - [Licensing](/{{version}}/licensing)
 - The Basics
+    - [Forms](/{{version}}/forms)
     - [Fieldtypes...](/{{version}}/fieldtypes)
 - Contributing
     - [Coding Standards](/{{version}}/coding-standards)

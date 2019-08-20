@@ -1,6 +1,57 @@
 # Updating
 > We attempt to document every possible breaking change. Since some of these breaking changes are in obscure parts of the CMS, only a portion of these changes may actually affect your website.
 
+## Updating To 5.13
+
+**Estimated Update Time: 1 Hour**
+
+The recent 5.13 release of Fusion has seen a number of changes, fixes and additions. This will be the last major update to the v5 line of FusionCMS, with all future resources going into the development of v6. Critical bug patches and security updates will still be pushed out as needed.
+
+### Redirects now include a notes field
+When creating a redirect entry in the SEO module, an informational note can be added to that entry, hopefully to help reference it in the future
+
+### Removed "glide()" helper function
+The `glide()` helper function, while not really ever used, was causing problems on some browser (IE11) because of the URL that it was returning. According to a previous poll, this shouldn't affect any current sites.
+
+### New field type: Button
+We have included a new field type that can be used immediately on any updated theme: `Button`. This simple field is actually three fields in one- each `button` fieldtype will include an input for the button link, the text of the button, and an option for the `target` attribute. On the front end, the field will also include an `isComplete` boolean value, returning `true` if both the link and text fields are filled in. These properties should be referenced as an array, similar to `replicator` or `address` field types: `$entry->banner_button['text']`. 
+
+### Dropdowns for "Group" entry
+When creating or editing a field, the "Group" setting will now be a `<select>` field, rather than a simple input. On page load, the dropdown will contain all of the current groups entered for this type, so groups can easily be selected based on what currently exists. This also includes a 'Create new group' option to generate an input field for a new group.
+
+### Addition of Google reCAPTCHA
+Fusion now includes native support for Google's reCAPTCHA v2 service. When this is enabled on a form, all submissions for this form will be required to include captcha verification. More information on setup of this for older themes, as well as a breakdown of the submission process, can be found [here](/{{version}}/forms).
+
+### Access Token Expiration Dates
+In mid 2018, a change was made to increase the default expiration of the API keys/tokens from the default 1 year to the new 100 years. *This did not actually work*, but any 5.13.0+ site will now correctly generate keys with this longer expiration.
+
+### Fix for active states in menus
+For a while, the `isActive()` function was behaving incorrectly, and not properly returning menu active states. This should now work correctly, both for development and production environments.
+
+### Add Google Analytics graph to Fusion dashboard
+A graph with analytics about visitors, page views, form contacts and devices can now be found on the dashboard of the CMS when the proper credentials are uploaded. These credentials can be entered in the system settings, under Google -> Insights.
+
+### Asset selection window
+No longer will the asset modal be stuck at the top of the page! Now, the modal will size to fit the screen, and stay fixed in this position until closed, whether the user was at the top of the page or the very bottom. This will also mitigate page height problems we see occasionally when uploading assets or creating new categories in this modal.
+
+### Upgrade to Laravel 5.7
+This update is kind of a lot, but one of the biggest things of note is that we can no longer use the one-line `@php(something())` shortcut in our blade templates. Any places that this occurs in a theme will need to be changed to:
+
+```
+@php
+  something();
+@endphp
+```
+
+### Glide improvements
+A simple change, but in past versions, calling an image file without Glide transformations (like `/asset/54fda349`) would actually still run the image file through the Glide processor. In some cases, it can actually cause images to return on the front end with *larger* file sizes than they were uploaded with. Now, if no transformations are specified, the image is returned wholesale without calling Glide at all.
+
+### Category sorting
+Much like entries, categories can now be sorted manually in the CMS. Each category group has its own settings for automatic and manual sort, as well as the sort term and order. Like entries, the manual sort can be used to sort them in to parent/child relationships
+
+### Disabling pagespeed module in development
+We've observed that there are numerous problems that can pop up when the Pagespeed module is run- what necessitated this change is that the default debug/error screen in the dev environment can show up incorrectly, or lose its interactive functionality because of the way this plugin is printing JS on the page. We've now disabled the pagespeed module entirely for any sites running in the dev enviroment.
+
 ## Updating To 5.10
 
 **Estimated Update Time: 5 Minutes - 1 Hour**
